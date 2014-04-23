@@ -1,0 +1,74 @@
+object LoginForm: TLoginForm
+  Left = 284
+  Top = 309
+  BorderStyle = bsToolWindow
+  Caption = 'LoginForm'
+  ClientHeight = 73
+  ClientWidth = 283
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnMouseMove = edtLoginMouseMove
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbLoginCapt: TLabel
+    Left = 8
+    Top = 8
+    Width = 68
+    Height = 13
+    Caption = 'lbLoginCapt'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btLogin: TJvStaticText
+    Left = 138
+    Top = 46
+    Width = 139
+    Height = 22
+    HelpContext = 1000
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'btLogin'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    HotTrackFont.Charset = DEFAULT_CHARSET
+    HotTrackFont.Color = clWindowText
+    HotTrackFont.Height = -11
+    HotTrackFont.Name = 'Tahoma'
+    HotTrackFont.Style = []
+    Layout = tlCenter
+    ParentFont = False
+    TabOrder = 0
+    TextMargins.X = 0
+    TextMargins.Y = 0
+    WordWrap = False
+    OnClick = btLoginClick
+    OnMouseMove = btLoginMouseMove
+  end
+  object edtLogin: TJvDotNetEdit
+    Left = 12
+    Top = 24
+    Width = 266
+    Height = 18
+    AutoSize = False
+    ParentColor = True
+    PasswordChar = '*'
+    TabOrder = 1
+    OnKeyPress = edtLoginKeyPress
+    OnMouseMove = edtLoginMouseMove
+  end
+end

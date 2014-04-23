@@ -1,0 +1,29 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 36
+[Grid]
+0 0
+[Code]
+
+Procedure `Step3'
+ Step Step Step 
+End Procedure
+
+Procedure `LineOf3'
+Rotate 
+Call `STEP3'
+Rotate Rotate 
+Call `STEP3'
+Rotate Jump
+End Procedure
+
+Begin 
+Call `LINEOF3'
+Call `LINEOF3'
+Call `LINEOF3'
+Call `LINEOF3'
+Call `LINEOF3'
+Call `LINEOF3'
+End 

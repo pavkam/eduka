@@ -1,0 +1,27 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 1
+[Data]
+1 1 0 -1 36
+[Grid]
+2 2 M
+3 2 A
+4 2 M
+5 2 A
+0 0
+[Code]
+
+Begin
+Right Down Up 
+Right Down Up 
+Right Down Up 
+Right Down 
+Down Up 
+Left Down Up 
+Left Down Up 
+Left Down 
+Up 
+
+Left
+Up    
+End 

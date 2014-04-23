@@ -1,0 +1,29 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 20
+[Grid]
+0 0
+[Code]
+
+Procedure `Craka'
+ Step Rotate Jump
+ Rotate Step Rotate
+ Step Rotate Rotate
+ Jump Step Rotate Rotate
+ Rotate Step Rotate
+ Rotate Rotate Jump
+ Rotate Step
+ Rotate Rotate Rotate Jump
+ Rotate Jump
+End Procedure
+
+Begin
+
+Repeat `5' Times
+  Call `Craka'
+End Repeat
+  Jump
+
+End

@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Lista erorilor declanşate în Eduka+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<link href="../css/default.css" rel="stylesheet" type="text/css">
+<SCRIPT language=javascript 
+src="../js/treemenu.js"></SCRIPT>
+<SCRIPT language=javascript 
+src="menuitems.js"></SCRIPT></head>
+
+
+<body  leftmargin="0" topmargin="0">
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="040039.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="044043.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+<table width="100%" height="90%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="2%" nowrap class="leftmenustyle">
+	  <SCRIPT language="" type=text/javascript >createTree(Tree,0,41);</script>
+    </td>
+    <td><p class="text-topictitle">Lista erorilor declanşate în Eduka+</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <A NAME="10000"></A><p class="text-subtopic">Eroarea (0x00)</p>
+      <p>     
+        Textul algoritmului nu contine erori sintactice. Tot ce este scris în 
+        program are sens. Însa acest fapt nu indica neaparat ca textul algoritmului 
+        este logic corect. <br>
+        Erorile logice pot fi detectate numai în timpul rularii algoritmului observând 
+        comportarea Executantului.</p>
+	  <p>&nbsp;</p>	
+	  <A NAME="10010"></A><p class="text-subtopic">Eroarea (0x0A)</p>
+      <p>
+        Refuz în timpul executiei.<br>
+        Mişcarea executantului a fost întreruptă de prezenţa unui obstacol (marginea 
+        grilei).</p>
+      <p>&nbsp;</p>
+	  <A NAME="10013"></A><p class="text-subtopic">Eroarea (0x0D)</p>
+      <p>Rularea algoritmului a intrat într-un ciclu infinit. Rularea algoritmului 
+        poate fi oprită utilizând Butonul Stopare.</p>
+      <p>&nbsp;</p>
+      <p> Exemplu de algoritm ce se blocheaza:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Început</b><br>
+        <b>&nbsp;&nbsp;Repetă</b><br>
+        <b>&nbsp;&nbsp;&nbsp;Cât Nu </b><font color="#800000">EMargine </font><b>Execută</b><br>
+        <font color="#000080">&nbsp;&nbsp;&nbsp;&nbsp;Pas</font><br>
+        <b>&nbsp;&nbsp;&nbsp;Sfârşit Cât</b><br>
+        <b>&nbsp;&nbsp;Până </b><font color="#800000">ELinie</font><br>
+        <b>&nbsp;Sfârşit</b></font></font> </p>
+      <p>&nbsp;</p>  
+      <A NAME="10001"></A><p class="text-subtopic">Eroarea (0x01)</p>
+      <p> Textul algoritmului nu este complet. Lipseşte unul sau mai multe cuvinte 
+        cheie.<br>
+      </p>
+      <p>Exemplul ce urmează prezintă cazul declanşarii unei astefl de erori.</p>
+      <p><font  face= "Courier New"><font color="#000000"><b>&nbsp;Început</b><br>
+        <b>&nbsp;Dacă </b><font color="#800080"><i>ELinie</i></font></font></font></p>
+      <p>În acest exeplu eroarea constă în lipsa terminaţiei corecte a structurii 
+        &quot;Dacă&quot; în textul algoritmului.</p>
+      <p>&nbsp;</p>
+      <A NAME="10003"></A><p class="text-subtopic">Eroarea (0x03)</p>
+      <p> Identificatorul nu reprezintă o condiţie corectă definită în limbaj.</p>
+      <p>Aceasta înseamnă scrierea greşită sau lipsa unui caracter în scrierea 
+        Condiţiei. În cazul executantului Pinguin e posibil ca Condiţia să nu 
+        fie scrisă complet sau în scrierea ei nu s-a ţinut cont de ordinea cuvintelor 
+        cheie din Condiţie.</p>
+      <p>&nbsp;</p>
+      <p>Următoarele exemple ilustrează unele cazuri de declanşare a erorii.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă </b><font color="#800000">ELiinie 
+        </font><b>Atunci</b></font></font></p>
+      <p>Literă în plus.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă Nu Atunci</b></font></font></p>
+      <p>Cuvântul cheie &quot;Nu&quot; nu poate să fie prezent singur în Condiţie. 
+        El doar neagă adevărul întors la verificarea spre exemplu a condiţiei 
+        &quot;ELinie&quot;.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă </b><font color="#800080"><i>Margine 
+        </i></font><b>Atunci</b></font></font> </p>
+      <p>Scrierea greşită a cuvântului cheie &quot;EMargine&quot;.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă </b><font color="#800000">Urma 
+        Va Perete </font><b>Atunci</b></font></font></p>
+      <p>Această eroare apare pentru cazul executantului Pinguin. Condiţiile executantului 
+        Pinguin diferă de cele ale executanţilor Cangur şi Furnica, mai mult decât 
+        atât, condiţiile în cazul executantului Pinguin sunt formate din două 
+        sau mai multe cuvinte cheie, în care are importanţă ordinea scrierii lor. 
+        Deaceea scrierea greşită a unuia din cuvinte chieie, lipsa unui cuvânt 
+        cheie sau nerespectarea ordinei scrierii cuvintelor cheie în expresia 
+        Condiţiei va genera eroare.</p>
+      <p>&nbsp;</p>
+      <A NAME="10005"></A><p class="text-subtopic">Eroarea (0x05)</p>
+      <p> În componenţa structurilor compuse sunt prezente mai multe cuvinte cheie. 
+        În dependenţă de structură ele pot fi:</p>
+      <p>&nbsp;</p>
+      <p>Repetă şi Pâna pentru ciclul Repetă...Pâna:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Repetă</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Până </b><font color="#800080"><i>&lt;Condiţie&gt;</i></font></font></font></p>
+      <p>&nbsp;</p>
+      <p> Cât, Execută, Sfârsit şi Cât pentru ciclul Cât:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Cât </b><font color="#800080"><i>&lt;Condiţie&gt; 
+        </i></font><b>Execută</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Cât</b></font></font></p>
+      <p>&nbsp;</p>
+      <p> Dacă, Atunci, Altfel, Sfârsit şi Dacă pentru selectorul Dacă:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă </b><font color="#800080"><i>&lt;Condiţie&gt; 
+        </i></font><b>Atunci</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Altfel</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Dacă</b></font></font></p>
+      <p>&nbsp;</p>
+      <p>Verificaţi prezenţa acestor cuvinte cheie şi corectitudinea scrierii 
+        lor.</p>
+      <p>&nbsp;</p>
+      <A NAME="10006"></A><p class="text-subtopic">Eroarea (0x06)</p>
+      <p> Număr incorect.<br>
+        Un numar corect reprezinta un şir format numai din cifre. Valoarea numerică 
+        din componenţa ciclului Repetă &lt;Număr&gt; Ori reprezintă un contor 
+        ce nu poate sa fie un număr negativ.</p>
+      <p>&nbsp;</p>
+      <A NAME="10007"></A> <p class="text-subtopic">Eroarea (0x07)</p>
+      <p> În corpul unei instrucţiuni de ciclu sau Procedură trebuie să fie prezentă 
+        obligator cel putin o instrucţiune.</p>
+      <p>&nbsp;</p>
+      <p>Exemplu corect:</p>
+      <p><font face="Courier New"><font color="#000000"><b>&nbsp;Repetă</b><br>
+        <font color="#000080">&nbsp;&nbsp;Pas</font><br>
+        <b>&nbsp;Până </b><font color="#800000">EMargine</font></font></font></p>
+      <p>&nbsp;</p>
+      <p> Exemplu incorect:</p>
+      <p><font face="Courier New"><font color="#000000"><b>&nbsp;Repetă</b><br>
+        <font color="#000080">&nbsp;&nbsp;</font><br>
+        <b>&nbsp;Până </b><font color="#800000">EMargine</font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10011"></A><p class="text-subtopic">Eroarea (0x0B)</p>
+      <p> Secvenţa &lt;Condiţie&gt; a fost întâlnită în afara unei structuri compuse.</p>
+      <p>Această structură poate fi:</p>
+      <p>&nbsp;</p>
+      <p> ciclul Repetă...Pâna:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Repetă</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Până </b><font color="#800080"><i>&lt;Condiţie&gt;</i></font></font></font></p>
+      <p>&nbsp;</p>
+      <p> ciclul Cât:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Cât </b><font color="#800080"><i>&lt;Condiţie&gt; 
+        </i></font><b>Execută</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Cât</b></font></font></p>
+      <p>&nbsp;</p>
+      <p>selectorul Dacă:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă </b><font color="#800080"><i>&lt;Condiţie&gt; 
+        </i></font><b>Atunci</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Altfel</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Dacă</b></font></font></p>
+      <p>&nbsp;</p>
+      <p> Verificaţi în structura compusă prezenţa tuturor cuvintelor cheie, precum 
+        şi corectitudinea lor.</p>
+      <p>&nbsp;</p>
+      <A NAME="10012"></A><p class="text-subtopic">Eroarea (0x0C)</p>
+      <p> Cuvântul cheie Pâna apartine structurii de ciclu în care nu a fost găsit 
+        cuvântul-cheie Repetă ca început de structură.</p>
+      <p>&nbsp;</p>
+      <p>Exemplu corect:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Repetă</b><br>
+        <font color="#000080">&nbsp;&nbsp;Pas</font><br>
+        <b>&nbsp;Până </b><font color="#800000">EMargine</font></font></font></p>
+      <p>&nbsp;</p>
+	  <A NAME="10012"></A>
+      <p class="text-subtopic">Eroarea (0x1F)</p>
+      <p> Cuvântul cheie Repetă apartine structurii de ciclu în care nu a fost 
+        găsit cuvântul-cheie Până ca sfârşit de structură.</p>
+      <p>&nbsp;</p>
+      <p>Exemplu corect:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Repetă</b><br>
+        <font color="#000080">&nbsp;&nbsp;Pas</font><br>
+        <b>&nbsp;Până </b><font color="#800000">EMargine</font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10014"></A><p class="text-subtopic">Eroarea (0x0E)</p>
+      <p> Dupa cuvântul cheie lipseşte identificator de nume de Procedură.</p>
+      <p>Definiti numele de Procedură.</p>
+      <p>&nbsp;</p>
+      <p>Exemplu corect:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Procedură </b><font color="#800080"><i>Patrat</i></font><br>
+        <font color="#000080">&nbsp;&nbsp;Pas Rotire</font><br>
+        <font color="#000080">&nbsp;&nbsp;Pas Rotire</font><br>
+        <font color="#000080">&nbsp;&nbsp;Pas Rotire</font><br>
+        <font color="#000080">&nbsp;&nbsp;Pas Rotire</font><br>
+        <b>&nbsp;Sfârşit Procedură</b></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10015"></A><p class="text-subtopic">Eroarea (0x0F)</p>
+      <p> Identificator dublat.<br>
+        Identificatorul deja reprezintă un nume de Procedură.</p>
+      <p>&nbsp;</p>
+      <p>În exemplul de mai jos identificatorul Patrat apare greşit a doua oară 
+        pentru a defini un nume de Procedură.</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Procedură </b><font color="#800080"><i>Patrat</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Procedură</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Procedură </b><font color="#800080"><i>Patrat</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Procedură</b></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10016"></A><p class="text-subtopic">Eroarea (0x10)</p>
+      <p> Instrucţiunea Apel de Procedură după cuvântul cheie Apel trebuie sa 
+        conţină identificatorul de nume de Procedură a procedurii apelate.</p>
+      <p>&nbsp;</p>
+      <p>Exemplu:<br>
+        <font  face="Courier New"><font color="#000000"><b>&nbsp;Apel </b><font color="#800080"><i>Patrat</i></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10017"></A><p class="text-subtopic">Eroarea (0x11)</p>
+      <p> Identificatorul de nume de Procedură nu a fost definit mai sus sau este 
+        scris incorect.</p>
+      <p>&nbsp;</p>
+      <p>În exemplul de mai jos identificatorul Patat apare greşit în instrucţtiunea 
+        apel de Procedură.</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Procedură </b><font color="#800080"><i>Patrat</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Procedură</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Început</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;&nbsp;Apel </b><font color="#800080"><i>Patat</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit</b></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10018"></A><p class="text-subtopic">Eroarea (0x12)</p>
+      <p>
+	    Identificator sau cuvânt cheie necunoscut.<br>
+        Identificatorul nu reprezintă cuvânt cheie definit în limbaj.</p>
+      <p>&nbsp;</p>
+      <A NAME="10020"></A><p class="text-subtopic">Eroarea (0x14)</p>
+      <p> Una sau mai multe instrucţiuni compuse nu au terminatie Sfârşit.</p>
+      <p>&nbsp;</p>
+      <A NAME="10021"></A><p class="text-subtopic">Eroarea (0x15)</p>
+      <p> După cuvântul cheie Sfârşit lipseşte un alt cuvânt cheie.</p>
+      <p>În dependenţă de structură el poate fi:</p>
+      <p>&nbsp;</p>
+      <p>- cuvântul cheie Repetă pentru ciclul:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Repetă </b><font color="#800080"><i>&lt;Număr&gt; 
+        </i></font><b>Ori</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Repetă</b></font></font></p>
+      <p>&nbsp;</p>
+      <p> - cuvântul cheie Cât pentru ciclul:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Cât </b><font color="#800080"><i>&lt;Condiţie&gt; 
+        </i></font><b>Execută</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Cât</b></font></font></p>
+      <p>&nbsp; </p>
+      <p>- cuvântul cheie Dacă pentru selectorul:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă </b><font color="#800080"><i>&lt;Condiţie&gt; 
+        </i></font><b>Atunci</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Altfel</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Dacă</b></font></font></p>
+      <p>&nbsp;</p>
+      <p> - cuvântul cheie Procedură pentru declaraţia de Procedură:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Procedură </b><font color="#800080"><i>&lt;Nume&gt;</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Procedură</b></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10022"></A><p class="text-subtopic">Eroarea (0x16)</p>
+      <p> Cuvântul cheie Început indică începutul execuţiei algoritmului iar Sfârşit 
+        - sfârşitul execuţiei algoritmului. Dacă lipseşte cuvântul cheie Început, 
+        atunci nu se porneşte execuţia algoritmului.</p>
+      <p>&nbsp;</p>
+      <p>Exemplu corect:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Început</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;Secvenţă de instrucţiuni</i></font><br>
+        <b>&nbsp;Sfârşit</b></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10023"></A><p class="text-subtopic">Eroarea (0x17)</p>
+      <p> Orice identificator se începe cu o literă a alfabetului latin sau simbolul 
+        sublinierii: &quot;_&quot; dupa care urmează orice combinaţie din litre, 
+        simbolul sublinierii şi cifre.</p>
+      <p>&nbsp;</p>
+      <p>Exemple de identificatori corecţi:</p>
+      <p><font  face="Courier New"><font color="#800080"><i>_Rand, PatratMare, 
+        _3_patrate</i></font></font></p>
+      <p>&nbsp;</p>
+      <p> Identificatori incorecţi:</p>
+      <p><font  face="Courier New"><font color="#800080"><i>3Patrate, *Patrat* 
+        </i></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10024"></A><p class="text-subtopic">Eroarea (0x18)</p>
+      <p> Identificatorul de nume de amintire apare în structurele instrucţiunilor:<br>
+        Memorare &lt;Nume amintire&gt; şi Uitare &lt;Nume amintire&gt; </p>
+      <p>&nbsp;</p>
+      <p>Exemple:<br>
+        <font  face="Courier New"><font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>Memorare </b><font color="#800080"><i>&nbsp;Litere</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>Uitare </b><font color="#800080"><i>&nbsp;Litere</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10025"></A><p class="text-subtopic">Eroarea (0x19)</p>
+      <p> Unul din operanzi din condiţie poate sa fie un simbol ce reprezinta 
+        o literă în urmatoarele cazuri:</p>
+      <p><span class="code">Celula = Litera<br>
+        Celula > Litera<br>
+        Celula < Litera<br>
+        Buzunar = Litera<br>
+        Buzunar > Litera<br>
+        Buzunar < Litera</span></p>
+      <p>&nbsp;</p>
+      <p> Unde &quot;Litera&quot; poate fi un simbol (Litera).</p>
+      <p>&nbsp;</p>
+      <p> Exemplu corect:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Dacă </b><font color="#800000">Celula 
+        </font><font color="#800080"><i>= A </i></font><b>Atunci</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Altfel</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Sfârşit Dacă</b></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10026"></A><p class="text-subtopic">Eroarea (0x1A)</p>
+      <p> Refuz în timpul execuţiei.<br>
+        S-a încercat de a lasa din buzunar o literă în timp ce buzunarul este 
+        gol.</p>
+      <p>&nbsp;</p>
+      <A NAME="10027"></A><p class="text-subtopic">Eroarea (0x1B)</p>
+      <p> Refuz în timpul execuţiei.<br>
+        S-a încercat de a ridica din celulă o literă în timp ce buzunarul conţine 
+        o literă.</p>
+      <p>&nbsp;</p>
+      <A NAME="10028"></A><p class="text-subtopic">Eroarea (0x1C)</p>
+      <p> Refuz în timpul execuţiei.<br>
+        S-a încercat de a ridica din celulă o literă în timp ce celula este goală.</p>
+      <p>&nbsp;</p>
+      <A NAME="10029"></A><p class="text-subtopic">Eroarea (0x1D)</p>
+      <p>
+	    Refuz în timpul executiei.<br>
+        S-a încercat de a lasa din buzunar o litera în timp ce celula contine 
+        o litera.</p>
+      <p>&nbsp;</p>
+      <A NAME="10030"></A><p class="text-subtopic">Eroarea (0x1E)</p>
+      <p> Refuz în timpul executiei.<br>
+        Nu poate fi uitata o amintire ce nu a fost memorata.</p>
+      </td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="040039.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="044043.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+</body>
+</html>

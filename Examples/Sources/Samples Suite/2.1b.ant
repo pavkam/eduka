@@ -1,0 +1,37 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 1
+[Data]
+1 1 1 0 45
+[Grid]
+0 0
+[Code]
+
+Procedure `Rt_5'
+ Right Right Right
+ Right Right
+End Procedure
+
+Procedure `Lt_5'
+ Left Left Left
+ Left Left
+End Procedure
+
+Procedure `Up_5'
+ Up Up Up
+ Up Up
+End Procedure
+
+Procedure `Dw_5'
+ Down Down Down
+ Down Down
+End Procedure
+
+Begin
+ Call `Rt_5' Right
+ Call `Dw_5' Down
+ Call `Lt_5' Left
+ Call `Up_5' Up
+End
+
+

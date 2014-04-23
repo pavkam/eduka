@@ -1,0 +1,49 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 2
+[Data]
+1 1 1 0 24
+[Grid]
+3 2 H
+4 3 e
+5 4 l
+6 5 l
+7 6 o
+0 0
+[Code]
+Begin
+
+ {`e'}
+ 
+ Step Step Step Rotate
+ Step Step Pick
+ Rotate Step Drop
+ Rotate Rotate
+ 
+ {`l'}
+ 
+ Step Step Rotate
+ Step Pick Rotate
+ Step Step Drop
+ Rotate Rotate
+ 
+ {`l'}
+ 
+ Step Step Step
+ Rotate Step Pick
+ Rotate Step Step Step
+ Drop Rotate Rotate
+ 
+ {`o'}
+ 
+ Step Step Step Step
+ Rotate Step Pick
+ Rotate Step Step
+ Step Step Drop
+ 
+ { <- }
+ 
+ Step Step Rotate
+ Step Step Step Step
+ Step Rotate
+End

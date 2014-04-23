@@ -1,0 +1,49 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 36
+[Grid]
+0 0
+[Code]
+
+Begin 
+Step 
+Jump 
+Rotate 
+Jump 
+Rotate 
+Step 
+Step 
+Rotate 
+Rotate 
+Rotate 
+Jump 
+Rotate 
+Rotate 
+Rotate 
+Step 
+Step 
+Step 
+Jump 
+Jump 
+Rotate 
+Jump 
+Rotate 
+Step 
+Step 
+Step 
+Step 
+Step 
+Rotate 
+Jump 
+Jump 
+Jump 
+Rotate 
+Jump 
+Jump 
+Jump 
+Jump 
+Jump 
+Jump 
+End 

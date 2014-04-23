@@ -1,0 +1,104 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 1
+[Data]
+1 1 1 0 45
+[Grid]
+2 6 P
+3 4 a
+4 7 g
+5 4 o
+6 3 r
+7 2 n
+7 5 L
+0 0
+[Code]
+Procedure `UntilLeft'
+While Not IsBorder  Do
+Left 
+End While 
+End Procedure
+
+Procedure `MoveDown'
+While Not IsBorder  Do
+Down 
+End While 
+End Procedure
+
+Begin  
+Call `MoveDown'
+Right 
+Up 
+Up
+Up 
+Right 
+Up 
+Right 
+Up 
+Right 
+Down 
+Right 
+Right 
+Up 
+Left 
+Left 
+Up 
+Left 
+Down 
+Right 
+Down 
+Left 
+Down 
+Down 
+Right 
+Up 
+Right 
+Up 
+Left 
+Down 
+Down 
+Right 
+Right 
+Up 
+Right 
+Up 
+Left 
+Left 
+Down 
+Call `UntilLeft'
+Up 
+Up 
+Right 
+Right 
+Right 
+Right 
+Up 
+Right 
+Down 
+Up 
+Up 
+Right 
+Down 
+Down 
+Call `UntilLeft'
+Down 
+Call `MoveDown'
+Right 
+Right 
+Up 
+Right 
+Right 
+Right 
+Down 
+Right 
+Up 
+Up 
+Left 
+Up 
+Right 
+Down 
+Right 
+Up 
+Call `UntilLeft'
+Up 
+End 

@@ -1,0 +1,131 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 1
+[Data]
+1 1 0 1 36
+[Grid]
+2 1 A
+2 5 E
+3 3 C
+3 10 J
+5 6 F
+5 7 G
+6 2 B
+8 8 H
+9 9 I
+10 4 D
+0 0
+[Code]
+
+Procedure `Move_A'
+
+ Right Right Right
+ Right Right Right
+ Right Right Left
+ Left Left Left Down
+ 
+End Procedure
+
+Procedure `Move_B'
+
+ Right Right
+ Right Right
+ Left Left Left
+ Left Left Left Left
+ Down
+ 
+End Procedure
+
+Procedure `Move_C'
+
+ Right Right Right
+ Right Right Right
+ Right Left Left
+ Left Left Left Left
+ Left Left Down Down
+ 
+End Procedure
+
+Procedure `Move_E'
+
+ Right Right Right
+ Right Right Right
+ Right Right Left
+ Left Left Left
+ Left Down
+
+End Procedure
+
+Procedure `Move_F'
+
+ Right Right Right
+ Right Right Left
+ Left Left Left Left
+ Down
+ 
+End Procedure
+
+Procedure `Move_G'
+
+ Right Right Right
+ Right Right Left
+ Left Down
+ 
+End Procedure
+
+Procedure `Move_H'
+
+ Right Right
+ Left Down
+ 
+End Procedure
+
+Procedure `Move_I'
+
+ Right Left Left
+ Left Left Left Left
+ Left Down
+ 
+End Procedure
+
+Procedure `Move_J'
+
+ Right Right Right
+ Right Right
+ Right Right
+ 
+End Procedure
+
+Procedure `Move_Back'
+
+ Left Left Left Left
+ Left Left Left Left
+ Up Up Up Up
+ Up Up Up Up Up
+ 
+End Procedure
+
+Begin
+ { A }
+   Call `Move_A'
+ { B }
+   Call `Move_B'
+ { C }
+   Call `Move_C'
+ { E }
+   Call `Move_E'
+ { F }
+   Call `Move_F'
+ { G }
+   Call `Move_G'
+ { H }
+   Call `Move_H'
+ { I }
+   Call `Move_I'
+ { J }
+   Call `Move_J'
+ { < - }
+   Call `Move_Back'
+
+End
+

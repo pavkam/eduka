@@ -1,0 +1,121 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 2
+[Data]
+1 1 1 0 45
+[Grid]
+1 2 s
+1 3 a
+1 4 r
+1 5 s
+1 6 e
+1 7 v
+1 8 f
+2 1 a
+2 2 r
+2 3 r
+2 4 d
+2 5 b
+2 6 a
+2 7 d
+2 8 h
+3 1 d
+3 2 j
+3 3 s
+3 4 r
+3 5 h
+3 6 t
+3 7 b
+3 8 c
+4 1 t
+4 2 t
+4 3 r
+4 4 j
+4 5 r
+4 6 r
+4 7 n
+4 8 a
+5 1 h
+5 2 e
+5 3 v
+5 4 g
+5 5 d
+5 6 s
+5 7 n
+5 8 t
+6 1 t
+6 2 h
+6 3 j
+6 4 d
+6 5 f
+6 6 i
+6 7 s
+6 8 s
+7 1 i
+7 2 u
+7 3 n
+7 4 g
+7 5 p
+7 6 j
+7 7 g
+7 8 m
+8 1 u
+8 2 i
+8 3 i
+8 4 v
+8 5 y
+8 6 u
+8 7 n
+8 8 f
+0 0
+[Code]
+Procedure `Complex'
+If #2$1 #2$2 #2$3 Then
+If Not #3$1 #3$2 #3$3 Then
+ Pick
+End If
+Else
+If #3$1 #3$2 #3$3 Then
+ Drop
+End If
+End If
+Step
+End Procedure
+
+
+Begin
+If #1$1 #1$2 #1$3 Then
+Rotate Rotate
+End If
+While Not #1$1 #1$2 #1$3 Do
+
+While Not #1$1 #1$2 #1$3 Do
+Call `Complex'
+End While
+
+Rotate
+
+If #1$1 #1$2 #1$3 Then
+Rotate Rotate
+Else
+Call `Complex'
+Rotate
+End If
+
+While Not #1$1 #1$2 #1$3 Do
+Call `Complex'
+End While
+
+Rotate Rotate Rotate
+If #1$1 #1$2 #1$3 Then
+Rotate Rotate
+Else
+Call `Complex' Rotate Rotate Rotate
+End If
+
+If #1$1 #1$2 #1$3 Then
+Rotate Call `Complex' Rotate
+End If
+
+End While
+End

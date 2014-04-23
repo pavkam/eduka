@@ -1,0 +1,34 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 36
+[Grid]
+0 0
+[Code]
+
+Procedure `ARect'
+Repeat `4' Times
+
+ While Not IsBorder Do
+    Step
+ End While
+ Rotate
+End Repeat
+
+ Jump Rotate Jump
+ Rotate Rotate Rotate
+ 
+End Procedure
+
+Begin
+ Call `ARect'
+ Repeat `48' Times
+ Repeat `24' Times
+   If Not IsLine Then
+     Step
+   End If
+ End Repeat
+  Rotate
+ End Repeat
+End

@@ -1,0 +1,376 @@
+//
+// The Original Code is: Russian_RU.lng, released 2005-10-03.
+// Authors of this file are Popov John and Ciobanu Alexander. All Rights Reserved.
+//
+
+
+Name                    = "Русский"
+Code                    = "ru"
+Help_File               = "pages-ru"
+
+File                    = "&Файл"
+File_New                = "&Создать"
+File_Open               = "&Открыть..."
+File_Close              = "&Закрыть"
+File_Save               = "Со&хранить"
+File_SaveAs             = "Сох&ранить Как..."
+File_Export             = "&Экспорт в HTML..."
+File_Print              = "&Печать..."
+File_Exit               = "&Выход"
+
+Edit                    = "&Правка"
+Edit_Extend             = "&Расширенный/Нормальный Редактор"
+Edit_ShowLines          = "Показать/&Скрыть нумерацию ряда"
+Edit_Undo               = "&Отменить"
+Edit_Cut                = "&Вырезать"
+Edit_Copy               = "&Копировать"
+Edit_Paste              = "В&ставить"
+Edit_SelectAll          = "Вы&делить Всё"
+Edit_Clear              = "&Удалить"
+
+Commands                = "&Операторы"
+Commands_Basic          = "&Простые"
+Commands_Advanced       = "&Составные"
+Commands_Condition      = "&Условия"
+
+Program                 = "П&рограмма"
+Program_CheckSyntax     = "&Проверка Синтаксиса"
+Program_Run             = "&Запуск"
+Program_Stop            = "&Остановка"
+Program_Step            = "&Следующий Шаг"
+Program_StopPoint       = "&Установить/Убрать точку прерывания"
+
+Options                      = "&Опции"
+Options_SelectLanguage       = "Выбор &Языка Интерфейса..."
+Options_SelectInterpreter    = "Выбор &Исполнителя..."
+Options_CreateShortcuts      = "&Создать Ярлыки на Рабочем Столе"
+Options_PackageManager	     = "&Управление Пакетами..."
+Options_Highlight            = "Включить/Выключить Просмотр &Шаг-за-Шагом"
+Options_Sound                = "Включить/Выключить &Звуки"
+
+Tools                        =  "&Инструменты"
+Tools_Exercise_Editor        =  "Редактор &Задач"
+Tools_Test_Editor            =  "Редактор &Тестов" 
+
+Window                       = "Ок&но"
+Window_ResetGrid             = "&Восстановить Сохранённое Поле"
+Window_SaveGrid              = "&Сохранить Текущее Поле"
+Window_ClearGrid             = "&Очистить Текущее Поле"
+
+Help                         = "&Справка"
+Help_HelpTopics              = "&Вызов Справки"
+Help_About                   = "&О Программе"
+
+Commands_Basic_Kng_Start               = "&Начало"
+Commands_Basic_Kng_End                 = "&Конец"
+Commands_Basic_Kng_Step                = "&Шаг"
+Commands_Basic_Kng_Jump                = "&Прыжок"
+Commands_Basic_Kng_Rotate              = "П&оворот"
+
+Commands_Advanced_Kng_While            = "&Пока"
+Commands_Advanced_Kng_Until            = "&До"
+Commands_Advanced_Kng_Repeat           = "П&овтори"
+Commands_Advanced_Kng_If               = "&Если"
+Commands_Advanced_Kng_Else             = "&Иначе"
+Commands_Advanced_Kng_Procedure        = "П&роцедура"
+Commands_Advanced_Kng_Call             = "&Вызов"
+Commands_Advanced_Kng_Is_Line          = "Л&иния"
+Commands_Advanced_Kng_Is_Border        = "Кр&ай"
+Commands_Advanced_Kng_Is_Not_Line      = "&Не Линия"
+Commands_Advanced_Kng_Is_Not_Border    = "Не &Край"
+
+Commands_Basic_Ant_Start               = "&Начало"
+Commands_Basic_Ant_End                 = "&Конец"
+Commands_Basic_Ant_Right               = "&Вправо"
+Commands_Basic_Ant_Left                = "В&лево"
+Commands_Basic_Ant_Up                  = "Вв&ерх"
+Commands_Basic_Ant_Down                = "Вн&из"
+
+Commands_Advanced_Ant_While            = "&Пока"
+Commands_Advanced_Ant_Until            = "&До"
+Commands_Advanced_Ant_Repeat           = "П&овтори"
+Commands_Advanced_Ant_If               = "&Если"
+Commands_Advanced_Ant_Else             = "&Иначе"
+Commands_Advanced_Ant_Procedure        = "П&роцедура"
+Commands_Advanced_Ant_Call             = "&Вызов"
+Commands_Advanced_Ant_Is_Border        = "&Край"
+Commands_Advanced_Ant_Is_Not_Border    = "&Не Край"
+
+Commands_Basic_Tux_Start               = "&Начало"
+Commands_Basic_Tux_End                 = "&Конец"
+Commands_Basic_Tux_Step                = "&Шаг"
+Commands_Basic_Tux_Rotate              = "&Поворот"
+Commands_Basic_Tux_Else                = "&Иначе"
+
+Commands_Advanced_Tux_While            = "&Пока"
+Commands_Advanced_Tux_Until            = "&До"
+Commands_Advanced_Tux_If               = "&Если"
+Commands_Advanced_Tux_Procedure        = "П&роцедура"
+Commands_Advanced_Tux_Call             = "&Вызов"
+Commands_Advanced_Tux_Remember         = "&Запомнить"
+Commands_Advanced_Tux_Forget           = "З&абыть"
+Commands_Advanced_Tux_Goback           = "В&озврат"
+Commands_Advanced_Tux_Pick             = "По&днять"
+Commands_Advanced_Tux_Drop             = "&Бросить"
+Commands_Advanced_Tux_Swap             = "&Обменять"
+
+gb_Author                  = "Автор"
+gb_DurationSkill           = "Длительность/Уровень"
+gb_Language                = "Язык"
+gB_Title                   = "Название"
+gb_Description             = "Условия задачи"
+gb_Restrictions            = "Ограничения задачи"
+gb_Grids                   = "Начальное/Конечное"
+
+__Info_I                   = "Условия Задачи"
+__TestEditor_I             = "Редактор Тестов"
+__Filter_I                 = "Критерии фильтрации в Списке Задач"
+__Available_I              = "Список Задач"
+__Selected_I               = "Список Выбранных Задач"
+__StartTest                = "Запустить Тест"
+
+CB_NOVICE                  = "Начинающий"
+CB_ADVANCED                = "Средний"
+CB_EXPERT                  = "Эксперт"
+CB_MINUTES                 = "мин."
+CBALL_ALL                  = "Все"
+
+Help_What_Is_This          = "Что это такое?"
+Speed_Label                = "Скорость:"
+Modified_Label             = "Изменён"
+
+
+Pocket_Text                = "Карман:"
+MsgLabel_Text              = "Окно Сообщений"
+
+Dialog_Ok                  = "OK"
+Dialog_Yes                 = "Да"
+Dialog_No                  = "Нет"
+Dialog_Cancel              = "Отменить"
+
+Dialog_HelpExit            = "&Выход"
+Dialog_DefProc             = "<Имя Процедуры>"
+Dialog_DefMem              = "<Имя Воспоминания>"
+Dialog_AFiles              = "Найденные языки"
+Dialog_SaveQ               = "Сохранить изменения в"
+
+Dialog_I_Tux               = "Пингвин"
+Dialog_I_Kng               = "Кенгурёнок"
+Dialog_I_Ant               = "Муравей"
+DIALOG_I_ETT               = "Редактор Тестов"
+DIALOG_I_ETK               = "Редактор Задач"
+
+DIALOG_FC_ADMIN            = "Администрация"
+
+DLG_INSTRUCTIONS	   = "Выполненные команды:"
+Dialog_C_SC                = "Выбор условие"
+Dialog_C_SM                = "Выбор воспоминание"
+Dialog_C_SS                = "Ввод данных ученика"
+
+SS_StudName                = "Имя ученика:"
+SS_ExportFile              = "Имя файла результатов:"
+DIALOG_ENTEQ               = "Сохранить результат тестирования?"
+ExerciseID                 = "Задача"
+DIRSELECT                  = "Выберите паку в которая содержит задачи:"
+
+ExerciseISOK                   = "Найдено правильное решение"
+ExerciseWASOK                  = "Правильное решение было"
+ExerciseNOTOK                  = "Правильного решения ещё не достигнуто"
+
+TuxFilter     = "Файлы Пингвин (*%s)|*%s|Все Файлы(*.*)|*.*"
+AntFilter     = "Файлы Муравей (*%s)|*%s|Все Файлы(*.*)|*.*"
+KngFilter     = "Файлы Кенгурёнок (*%s)|*%s|Все Файлы(*.*)|*.*"
+TskFilter     = "Файлы Задачи ${APP} (*%s)|*%s|Все Файлы(*.*)|*.*"
+PkgFilter     = "Файлы Пакет ${APP} (*%s)|*%s|Все Файлы(*.*)|*.*"
+TstFilter     = "Файлы Тесты ${APP} (*%s)|*%s|Все Файлы(*.*)|*.*"
+HtmFilter     = "Файлы HTML (*%s;*%s)|*%s;*%s|Все Файлы(*.*)|*.*"
+
+SAVE_TITLE    = "Сохранить Файл"
+OPEN_TITLE    = "Открыть Файл"
+
+
+Dialog_C_ST   = "Выбор Числа Повторений"
+Dialog_C_SN   = "Выбор Имени Процедуры"
+Dialog_C_SI   = "Выбор Исполнителя"
+Dialog_C_SL   = "Выбор Языка"
+Dialog_C_CS   = "Подтверждение"
+Dialog_C_HP   = "Справка"
+
+DLGINSTALL    = "Установить"
+DLGUNINSTALL  = "Удалить"
+DLG_AVPK      = "Установленные Пакеты:"
+DIALOG_C_SP   = "Управление пакетами"
+
+
+Dialog_C_NOTPK    = "Важно"
+DIalog_PK_ERRMSG  = "Файл который вы желаете установить не является ${APP} пакетом!"
+Dialog_PK_OKMSG   = "Пакет ${APP} '%s' содержит %s файл(ов). Продолжить устоновку?"
+Dialog_PK_ERRLMSG = "Установка выбранного вами пакета не удалась полностью!"
+Dialog_PK_GOODMSG = "Установка выбранного вами пакета удалась!"
+
+
+HINT_GridInitial  = "Начальное Поле"
+HINT_GridFinal    = "Конечное Поле"
+HINT_Conditions   = "Условия Задания"
+HINT_NextExercise = "Следующее задание"
+HINT_PrevExercise = "Предыдущее задание"
+
+HTML_Initial      = "Начальное Поле"
+HTML_Final        = "Конечное Поле"
+HTML_Printed_By   = "Напечатано"
+HTML_Interpreter  = "Исполнитель"
+HTML_Test         = "Тест"
+HTML_Resolved_By  = "Решил"
+HTML_Unknown_Name = "Неизвестный"
+HTML_Charset      = "windows-1251"
+
+
+SY_Cond1      =  "Будет Следовать Стена"
+SY_Cond2      =  "Ячейка Содержит Букву"
+SY_Cond3      =  "Карман Содержит Букву"
+SY_Cond4_     =  "Могу Вспомнить"
+SY_Cond5      =  "Ячейка = Карман"
+SY_Cond6      =  "Ячейка > Карман"
+SY_Cond7      =  "Ячейка < Карман"
+
+SY_Cond16     =  "Карман = Ячейка"
+SY_Cond17     =  "Карман > Ячейка"
+SY_Cond18     =  "Карман < Ячейка"
+
+SY_Cond8_     =  "Ячейка ="
+SY_Cond9_     =  "Ячейка >"
+SY_Cond10_    =  "Ячейка <"
+SY_Cond11_    =  "Карман ="
+SY_Cond12_    =  "Карман >"
+SY_Cond13_    =  "Карман <"
+SY_Cond14     =  "Карман Содержит Прописную"
+SY_Cond15     =  "Ячейка Содержит Прописную"
+
+SY_Pick       =  "Поднять"
+SY_Drop       =  "Бросить"
+SY_Swap       =  "Обменять"
+SY_Remember   =  "Запомнить"
+SY_Restore    =  "Возврат"
+SY_Forget     =  "Забыть"
+
+SY_THEN       = "Тогда"
+SY_TIMES      = "Раз"
+SY_DO         = "Делай"
+SY_START      = "Начало"
+
+SY_JUMP       = "Прыжок"
+SY_STEP       = "Шаг"
+SY_ROTATE     = "Поворот"
+
+SY_END        = "Конец"
+SY_LEFT       = "Влево"
+SY_RIGHT      = "Вправо"
+SY_UP         = "Вверх"
+SY_DOWN       = "Вниз"
+SY_WHILE      = "Пока"
+SY_UNTIL      = "До"
+SY_REPEAT     = "Повтори"
+SY_IF         = "Если"
+SY_ELSE       = "Иначе"
+SY_PROCEDURE  = "Процедура"
+SY_IS_BORDER  = "Край"
+SY_IS_LINE    = "Линия"
+SY_CALL       = "Вызов"
+SY_NOT        = "Не"
+
+SY_LTTRS    = "ёйцукенгшщзхъфывапролджэячсмитьбюabcdefghijklmnopqrstuvwxyz_"
+SY_SGNS      = "0123456789"
+
+ERR_0x00 = "(0x00) Синтаксический контроль не выявил никаких ошибок."
+ERR_0x0A = "(0x0A) Выполнение не может быть продолжено. Впереди препятствие."
+ERR_0x0D = "(0x0D) Алгоритм вошел в бесконечный цикл. Используйте кнопку 'Стоп' для завершения."
+ERR_0x01 = "(0x01) Незаконченный алгоритм."
+ERR_0x03 = "(0x03) Ошибочное или неправильное условие '%s'."
+ERR_0x05 = "(0x05) Ключевое слово '%s' отсутствует в структуре команды '%d'."
+ERR_0x06 = "(0x06) Ошибочный номер '%s' использован в конструкции '%d'."
+ERR_0x07 = "(0x07) Тело составной команды '%d' должно содержать хотябы одну команду."
+ERR_0x0B = "(0x0B) Слово '%s' должна присутствовать в конструкции '%d'"
+ERR_0x0C = "(0x0C) Ключевое слово '%d' принадлежит структуре цикла, в котором не было найдено ключевое  
+слово '%s'."
+ERR_0x0E = "(0x0E) Отсутствует имя процедуры."
+ERR_0x0F = "(0x0F) Идентификатор '%s' уже использован как имя процедуры."
+ERR_0x10 = "(0x10) Имя процедуры отсутствует в команде '%d'."
+ERR_0x11 = "(0x11) Процедура '%s' не было определенно."
+ERR_0x12 = "(0x12) Идентификатор '%s' не является ключевым словом."
+ERR_0x14 = "(0x14) Команда или команды не имеют окончания '%d'."
+ERR_0x15 = "(0x15) Ошибочное слово привязано к слову '%d'."
+ERR_0x16 = "(0x16) Не было найдено ключевое слово '%d'. Алгоритм не может быть выполнен."
+ERR_0x17 = "(0x17) Символ '%s' ошибочно использован в определение идентификатора."
+
+ERR_0x18 = "(0x18) Идентификатор имени воспоминания отсутствует в команде '%d'."
+ERR_0x19 = "(0x19) Выражение '%d' должна быть составлена из одной буквы."
+ERR_0x1A = "(0x1A) Выполнение не может быть продолжено. Карман пустой."
+ERR_0x1B = "(0x1B) Выполнение не может быть продолжено. Карман не пустой."
+ERR_0x1C = "(0x1C) Выполнение не может быть продолжено. Ячейка пуста."
+ERR_0x1D = "(0x1D) Выполнение не может быть продолжено. Ячейка не пуста."
+ERR_0x1E = "(0x1E) Выполнение не может быть продолжено. Воспоминание '%d' небыло найдено."
+ERR_0x1F = "(0x1F) Ключевое слово '%d' принадлежит циклу в котором не было найдено ключевое слово '%s'."
+
+ERR_Line = "Линия"
+
+
+
+// ---------------------------------
+
+
+DLG_LOGIN_FC      = "Контроль Пароля Администрации"
+DLG_LOGIN_LC      = "Введите Пароль ${APP} :"
+DLG_LOGIN_BC      = "Войти"
+
+DLG_LOGIN_FC1     = "Сменить Пароль"
+DLG_LOGIN_LC1     = "Введите Новый Пароль ${APP} :"
+DLG_LOGIN_BC1     = "Сменить"
+
+DLG_LOGIN_FC2     = "Проверка Нового Пароля"
+DLG_LOGIN_LC2     = "Введите Новый Пароль ${APP} :"
+DLG_LOGIN_BC2     = "Проверить"
+
+ 
+DLG_MSG_NOPASS    = "Пароль Администрации ${APP} отсутствует! Пожалуйста создайте!"
+DLG_MSG_WRONGPASS = "Неправильно введённый пароль!"
+DLG_MSG_NEWPASS   = "Новый пароль запомнен!"
+DLG_MSG_MISSPASS  = "Пароли не совпадают! попробуйте ещё раз!"
+
+ADM_CB_EL         = "Разрешить выбор Языка и Исполнителя."
+ADM_CB_ET         = "Разрешить использование Задач и Тестов."
+ADM_CB_ED         = "Разрешить использование опций отладки алгоритмов."
+ADM_CB_EA         = "Разрешить администрацию (не рекомендуется)."
+ADM_BT_SP         = "Сменить Пароль"
+ADM_BT_QT         = "Покинуть Администрацию"
+
+ADM_MM_EL         = "Выбирая этот режим вы позволяете пользователям менять языки и исполнители." 
+
+ADM_MM_ET         = "Выберите этот режим для активации инструментов редактирования задач и тестов."
+
+ADM_MM_ED         = "Выберите этот режим для активации инструментов отладки алгоритмов.
+
+ADM_MM_EA         = "Рекомендуется использовать этот режим только в случае если программа установлена на  
+вашем ПК, или вы уверены в своих действиях."
+
+
+
+REG_U_TRIAL	  = "Пробная Версия"
+REG_U_REGD        = "Действителен до %d"
+REG_U_LTXT        = "Введите регистрационный номер:"
+REG_U_LUSER       = "Введите имя пользователя:"
+REG_U_LORG        = "Введите имя организации:"
+
+REG_U_LTXT        = "Введите регистрационный ключ:"
+
+REG_U_TXT         = "Приобрести Лицензию!"
+REG_U_CAPT        = "Зарегистрировать Программу"
+REG_U_ITEM        = "Зарегистрировать"
+REG_U_OKRESTART   = "Введённый регистрационный Ключ действителен до %d. Благодарим за поддержку."
+REG_U_ERRRESTART  = "Введённый вами регистрационный Ключ недействителен!"
+REG_U_ANNOY       = "${APP} не зарегистрирована. Пожалуйста зарегистрируйте!"
+REG_U_DDREG       = "Зарегистрировать"
+REG_U_DDCONT      = "Покинуть ${APP}"
+
+REG_U_NOKEY       = "Не выбран действительный регистрационный Ключ."
+REG_U_KEYINFO     = "Регистрационный Ключ на имя '%u' из '%o' действителен до %d."
+REG_U_INFO_KEY    = "Информация Ключа"

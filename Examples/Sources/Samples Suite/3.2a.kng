@@ -1,0 +1,39 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 20
+[Grid]
+0 0
+[Code]
+
+Procedure `rect'
+Repeat `4' Times
+Step Rotate
+End Repeat
+Jump Jump
+End Procedure
+
+Procedure `return'
+Rotate Jump Rotate
+Repeat `8' Times
+Jump Jump
+End Repeat
+Rotate Rotate Rotate
+Jump
+Rotate Rotate Rotate
+End Procedure
+
+Begin
+Repeat `3' Times
+ Repeat `8' Times
+  Call `rect'
+ End Repeat
+ Call `return'
+End Repeat
+
+Repeat `16' Times
+Jump
+End Repeat
+
+End

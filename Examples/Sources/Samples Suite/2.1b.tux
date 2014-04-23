@@ -1,0 +1,45 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 2
+[Data]
+1 1 1 0 45
+[Grid]
+3 1 A
+3 5 E
+4 1 B
+4 5 D
+5 1 C
+5 5 C
+6 1 D
+6 5 B
+7 1 E
+7 5 A
+0 0
+[Code]
+Procedure `GoDown'
+
+
+ Step Rotate
+ Pick Step Step
+ Step Step Swap
+ Rotate Rotate
+ Step Step Step
+ Step Drop Rotate
+End Procedure
+
+
+Begin
+ Step
+ 
+ Call `GoDown'
+ Call `GoDown'
+ Call `GoDown'
+ Call `GoDown'
+ Call `GoDown'
+ 
+ Rotate Rotate Step
+ Step Step Step
+ Step Step Rotate
+ Rotate
+End
+ 

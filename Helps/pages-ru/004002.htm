@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Способы представления алгоритмов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../css/default.css" rel="stylesheet" type="text/css">
+<SCRIPT language=javascript 
+src="../js/treemenu.js"></SCRIPT>
+<SCRIPT language=javascript 
+src="menuitems.js"></SCRIPT></head>
+
+
+<body  leftmargin="0" topmargin="0">
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="003002.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="006005.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+<table width="100%" height="90%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="2%" nowrap class="leftmenustyle">
+	  <SCRIPT type=text/javascript >createTree(Tree,0,4);</script>
+    </td>
+    <td><p class="text-topictitle">Способы представления алгоритмов</p>
+      <p>Для записи алгоритмов существуют различные способы. Одни из них ориентированны 
+        на исполнителя – человека, другие – на исполнение компьютером, третьи 
+        являются вспомогательными, используемыми для облегчения рассуждений.</p>
+      <p>Приведем несколько способов записи алгоритма на примере решения одной 
+        о той же задачи.<br>
+        Составить алгоритм поиска значения меньшей из двух величин a и b.</p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Словесный способ</p>
+      <p>Словесный способ используется на начальных этапах изучения алгоритмов 
+        и предназначен для исполнения алгоритмов и предназначен для исполнения 
+        алгоритма человеком. Форма записи команд произвольная, главное, чтобы 
+        она была понятной и точной.</p>
+      <p class="text-fon-sur"><span class="code">Начало.<br>
+        Задать числовые значения величин a и b.<br>
+        Если a &lt; b, то y положить равным a, иначе y положить равным b.<br>
+        Записать в ответ значение y.<br>
+        Конец.</span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Графический способ</p>
+      <p>Графический способ является вспомогательным способом описания алгоритмов, 
+        облегчающим процесс создания алгоритмов решения сложных задач. Используемые 
+        геометрические фигура имеют стандартный смысл: овалом обозначают начало 
+        и конец алгоритма, прямоугольником – присваивание значений переменным 
+        величинам, ромбом – проверку условий, параллелограммом – команды ввода 
+        и вывода. Последовательность выполнения действий определяется стрелками.</p>
+      <p align="center"><img src="../images/scheme-alg.gif" width="415" height="399"></p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Алгоритмический язык</p>
+      <p>Исполнителем алгоритмов, записанных на алгоритмическом языке, может быть 
+        как человек (при этом разрешается использовать любые удобные команды), 
+        так и персональный компьютер, если используется только некоторая разрешенная 
+        система команд. К другим достоинствам алгоритмического языка относится 
+        его простота, а также то , что алгоритм записывается на родном языке (в 
+        данном переводе текста справки – на русском).<br>
+        В алгоритмическом языке используется некоторое ограниченное число слов, 
+        смысл и способ употребления которых строго определен. Эти слова называются 
+        служебными словами.</p>
+      <p class="text-fon-sur"><span class="code">Начало<br>
+        Ввод a<br>
+        Ввод b<br>
+        Если a&lt;b Тогда<br>
+        y:=a<br>
+        Иначе<br>
+        y:=b<br>
+        Конец Если<br>
+        Вывод y<br>
+        Конец</span></p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Язык программирования</p>
+      <p>Языки программирования служат для окончательной записи алгоритма в таком 
+        виде, в котором он может быть исполнен компьютером.</p>
+      <p class="text-fon-sur"><span class="code">program NaimenishaiaVelicina;<br>
+        var a,b,y : real;<br>
+        begin<br>
+        writeln('Vvedite znacenia dlea a si b');<br>
+        write('a = ');readln(a);<br>
+        write('b = ');readln(b);<br>
+        if a&lt;=b then y:=a else y:=b;<br>
+        writeln('Naimenishee znacenie:',y:5:2);<br>
+        readln;<br>
+        end.</span></p>
+      </td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="003002.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="006005.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 36
+[Grid]
+0 0
+[Code]
+Procedure `DrawBar1'
+Step Rotate 
+Step Rotate 
+Step Rotate 
+Step Rotate Rotate 
+Step Rotate Rotate 
+Rotate 
+End Procedure
+
+Procedure `DrawBar2'
+Step Rotate 
+Step Rotate 
+Step Rotate 
+Step Rotate Rotate 
+Rotate Rotate Rotate 
+Jump 
+End Procedure
+
+
+Procedure `LetterP'
+Repeat `7' Times
+Call `DRAWBAR1'
+End Repeat
+Rotate Rotate Rotate 
+While Not IsBorder  Do
+Jump 
+End While   
+Rotate Jump
+Repeat `3' Times
+Call `DRAWBAR2'
+End Repeat  
+End Procedure
+
+
+
+
+Begin 
+Call `LETTERP'
+
+Rotate 
+Jump 
+Rotate 
+Jump Rotate Rotate 
+Repeat `3' Times
+Call `DRAWBAR1'
+End Repeat 
+Rotate Rotate 
+Jump  
+Jump 
+Rotate
+Jump  
+Rotate 
+Repeat `2' Times
+Call `DRAWBAR2'
+
+End Repeat 
+End 

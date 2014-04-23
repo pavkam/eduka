@@ -1,0 +1,1195 @@
+----------------------------------------------------------
+Project    : Eduka+
+Licence    : GPL or MPL
+Language   : "Delphi 6/7" Compatible
+      Note : Delphi 6, Update 2 and Delphi 7 makes app to import some functions from Oleau32.dll that
+             are not supported on win95/win98 without Office instalation !
+
+      Note : Since we've started this project, a lot of stuff have changed including
+             source code structure ... So you can be sure that you'll find here things
+             and names that are not valid anymore.
+
+Version    : 1.6.0 Beta
+Developers : 
+             o Popov John        (Skeleton, Interface design, Main functionality)
+               pionely@softhome.net
+
+             o Ciobanu Alexander (Logics Interpreter,Syntax, Debugging stuff, 
+                                  Source Maintainer, Test/Task support, Other stuff)
+               alex@ciobanu.org
+ 
+
+                                 *** VERSION  0.1.0 ***
+LOG -------  18.07.2003
+    1) Starting this changelog file. Thanx god we're ALIVE :)
+                                                            (Ciobanu Alexander)
+
+LOG -------  19.07.2003
+
+    1) Added /Logic/Lists.pas to the source code. Implemented the "Tree Lists" to
+       be used in the future for logics.
+                                                            (Ciobanu Alexander)
+
+    2) Added /Logic/_Logic_.pas to the source code. Functions located in this file
+       are directly used to implement Logics.
+							    (Ciobanu Alexander)
+
+    3) Have adjusted sources to be able to use newly added units.
+							    (Popov John)
+    4) Added Some new functionalities to the main form.
+							    (Popov John)
+
+LOG -------  21.07.2003
+    1) Added /Debug/Debug.pas to maintain the debugging routines in the project.
+							    (Ciobanu Alexander)
+
+    2) Repaired some possible bugs in /Logic/_Logics_.pas.
+							    (Ciobanu Alexander)
+
+    3) Repaired some bugs related to logics in /Logic/_Logics_.pas after
+       testing it.
+							    (Popov John)
+
+                                 *** VERSION  0.1.1 ***
+
+LOG ------- 22.07.2003
+    1) Added /Utils.pas used for small utility functions like registry management,
+       atoi and atof functions.
+							    (Ciobanu Alexander)
+LOG ------- 23.07.2003
+    1) Created new functions to manage Moving/Conditioning on Kangaroo.
+                                                            (Popov John)
+
+    2) Added new functions to be used in Execution Thread. Added a new thread to
+       manage Dispatching for Kangaroo.
+                                                            (Ciobanu Alexander)
+    3) Found Some Bugs related to Uppercasing.
+                                                            (Ciobanu Alexander)
+
+LOG ------- 24.07.2003
+    1) Made Ant moving/ drawing routines work normally.
+							    (Popov John)
+
+    2) Repaired some bugs related to distinguishing between interpretors.
+							    (Popov John)
+
+    3) Made Dialogs (whithout Select_Language) work independently
+       from the Main form. Implemented Messaging.
+							    (Ciobanu Alexander)
+
+    4) Moved some variables from MainForm to their native units.
+                                                            (Popov John, Ciobanu Alexander)
+
+    5) Implemented New Syntax Checker, New Logics, removed no more
+       used Logic.pas unit. ProSyntax.pas is now used instead.
+                                                            (Ciobanu Alexander)
+
+    6) All instructions from the interpreter's code work fine after
+       some more tuning of sources. (Call, still is unimplemented)
+                                                            (Ciobanu Alexander)
+
+LOG ------- 25.07.2003
+    1) Made MAJOR changes to Trans_AI_ structure, plus added debugging to it.
+							    (Ciobanu Alexander)
+
+    2) Made a few changes to Debug.pas, added a file to swap all info to.
+ 							    (Ciobanu Alexander)
+    3) Made some changes to logics structure to make it stop when
+       a flag variable is set to True, this way we can control thread
+       to tell it when to DIE !
+							    (Ciobanu Alexander)
+
+    4) Once more made some units be independent from MainForm.
+							    (Ciobanu Alexander)
+
+    5) Added a Splash Screen that appears at application startup.
+							    (Popov John)
+
+    6) Threading Model works Perfect now. Application closes and kills
+       the thread. Controls are disabled when needed.
+							    (Ciobanu Alexander)
+
+    7) Found and EXTERMINATED some new bugs related to Image drawing
+							    (Popov John)
+
+    8) The two interpreters are NOW working separately and they
+        really work :)
+							    (Popov John)
+
+    7) Added a new Files.pas unit to /Editor to be used for
+       saving and reading of ANT/CNG format files (ANT/CNG formats are
+       not native Eduka+ Files, just for compatibility issues.)
+							    (Ciobanu Alexander)
+
+    8) Added a new Version.pas unit to /Debug to handle all versioning
+       stuff for Eduka+, It will be used in SplashScreen too.
+							    (Ciobanu Alexander)
+
+    9) Tuned /Edtior/EditorFuncs.pas to add normal lines to the Edit box.
+							    (Ciobanu Alexander)
+
+   10) Edit Box receives text only if a new file is defined.
+							    (Ciobanu Alexander)
+
+   11) Name_Dialog , now lets you select from the list, the name 
+       of previously defined procedures.
+							    (Ciobanu Alexander)
+
+   12) Repaired a few bugs in Movement.pas and Files.pas that
+       caused Ant to be placed in wrong way when reading files.
+							    (Popov John)
+
+   13) Implemented first steps in About Dialog.
+							    (Popov John)
+
+LOG ------- 26.07.2003
+    1) Filters for Open/Save Dialogs are swapped when CurrentInterpreter
+       changes.
+							    (Ciobanu Alexander)
+
+    2) Saving last used values to Registry is implemented.
+							    (Ciobanu Alexander)
+
+    3) Added CurrentLanguageFileName to Trans_AI_ to be used
+       when selecting languages.
+							    (Ciobanu Alexander)
+
+    4) Select_Language dialog, now prints in select box the names
+       of the Languages, and selects the language file when needed.
+							    (Ciobanu Alexander)
+
+    5) In MainForm, added some iface- functions to make easy the way controls
+       are enabled/ disabled. Now all group of controls depending on New
+       File is enabled with new file press or disabled on close.
+ 							    (Ciobanu Alexander)
+
+    6) Implemented Undo functionality. Added ifaceActivateEditControls to
+       all editing functions.
+							    (Ciobanu Alexander)
+
+    7) Added new constants defining new colors to DesignInside.pas.
+							    (Ciobanu Alexander)
+
+    8) Added positionating routine to text that enters to editor.
+							    (Ciobanu Alexander)
+
+    9) Added a new TRichEdit to main form. The first step to IntelliSyntax
+       is in progress :). Errors will appear in that richedit.
+							    (Ciobanu Alexander)
+
+   10) Finished adding support for SmartErrors. This program seems
+       to have a pretty strong IDE now LOL :) !!!
+							    (Ciobanu Alexander)
+
+   11) Added shortcuts for Check Syntax,Run, Stop. Also, before running a
+       check syntax is in progress.
+							    (Ciobanu Alexander)
+
+   12) Added a Smart routine for highlighting the Broken code.
+							    (Ciobanu Alexander)
+
+   13) Changed Syntax_Keywords to Normal Case, for beauty.Removed
+       some unused variables and repaired a few bugs related
+       to Is_No_Border/ Is_Not_Line. Changed Button captions.
+							    (Ciobanu Alexander)
+
+LOG ------- 27.07.2003
+    1) Repaired a bug with inserting to Editor from buttons.
+							    (Ciobanu Alexander)
+
+    2) Moved error strings to be read from files. Default language
+       items are ready, the only thing is that the files must be updated
+       in order to support that language errors. Added some other
+       keywords to be read from file.
+						            (Ciobanu Alexander)
+
+    3) Added debugging stuff and header to EditorFuncs.pas
+						  	    (Ciobanu Alexander)
+
+    4) Repaired many bugs, again bugs, .... bugs ..... bugs :)
+							    (Ciobanu Alexander)
+
+    5) Implemented Call instruction. All syntax is NOW working.
+       This means that we can change the version.
+							    (Ciobanu Alexander)
+
+                                    *** VERSION  0.1.2 ***
+
+    6) Modified Romana.lng to comply to newly added features (errors).
+							    (Ciobanu Alexander)
+
+    7) Modified and improved Char selection in Ant interpreter. It works
+       very FINE. Added an Edit control for this stuff.
+							    (Ciobanu Alexander)
+
+    8) Improved Language Handling Routines for faster working.
+							    (Ciobanu Alexander)
+
+    9) Implemented Canvas Locking for Multi-Thread support. No
+       Exception is raised now.
+							    (Ciobanu Alexander)
+
+   10) Repired ANT format file loading ! Now we can support this format
+       in full POWER.
+							    (Popov John)
+
+   11) SplahScreen has been Updated with a JPG image and looks pretty.
+      							    (Popov John)
+LOG ------- 28.07.2003
+
+   1) Removed Screen Buddy, No more needed since we'll use Helps (CHM).
+							    (Ciobanu Alexander)
+
+   2) Added XP manifest to the project. 
+							    (Ciobanu Alexander)
+
+   3) Edit_Char hides when mouse leaves Paint Area.
+							    (Ciobanu Alexander)
+
+   4) Is_Border has now a normal implementation. It works fine.
+							    (Popov John)
+
+   5) Adjust Speed Track Bar is implemented and Wait time is
+      adjusted Real-Time, while algorithm works, you can change
+      speed !
+							    (Popov John)
+  6) About Dialog IS TOTALLY implemented. It's finished, basta,
+     ready to use. My name looks so fine, coloured :)
+							    (Popov John)
+
+  7) Changed IF statement structure : <IF> CONDITION <THEN> ..... [ELSE] ..... <END IF>.
+							    (Ciobanu Alexander)
+  8) Repaired a SMALL bug in DispatchLine code.
+							    (Ciobanu Alexander)
+  9) Is_Line uses Is_Border for checking.
+							    (Popov John)
+ 10) Improved ErrorEdit.
+							    (Ciobanu Alexander)
+ 11) Ant files contains info about GridSize.
+							    (Ciobanu Alexander)
+
+ 12) Added 24x24 Grid size for running native CNG files created not in Eduka+.
+							    (Popov John)
+
+LOG ------- 29.07.2003
+
+  1) When Error appears , Editor height is lowered to let user see selection.
+     ErrorEdit disappears when Close is performed.
+							    (Ciobanu Alexander)
+  2) Added ParamStrings to intercept default parameters : 
+      --ant       : starts Eduka+ in ANT mode
+      --cng       : starts Eduka+ in Kangaroo mode
+      --noseldlg  : hide the Select_Interpreter entry from Options.
+							
+							     (Ciobanu Alexander)
+
+  3) Reset Grid was implemented for Ant and Cangur separately. Ant now
+     remembers the letters and position when resetting it.
+							     (Popov John)
+
+  4) Animal F*cks a message that execution cannot continue when it bumps
+     into an obstacle. (Letter obstacles are still in implementation.)
+							     (Popov John)
+
+  5) Removed white borders from icons.
+							     (Popov John)
+
+  6) Improved trail drawings !!! Letter obstacles are now supported.
+     This means we move to next version : 0.1.3
+							     (Popov John)
+
+                                    *** VERSION  0.1.3 ***
+
+  7) Implemented "What Is This?" context Popup. Awaiting John to
+     Add Help files.
+							     (Ciobanu Alexander)
+
+  8) When saving to file , program is automatically Translated to english.
+     When reading from file, program is translated to native language.
+     Added constants in Trans_AI_ for Default English Syntax.
+							     (Ciobanu Alexander)
+
+  9) Dynamical language selection does not require loosing algorithm
+     anymore !!!! Now we can translate algorithm to ANY available language.
+							     (Ciobanu Alexander)
+
+ 10) Made some minor corrections to Interface and in behavior of certain
+     file operation dialogs.
+							     (Ciobanu Alexander)
+
+ 11) Setuped a Timer to Save The current file after each minute in "Eduka+.~tmp"
+     this will be used in future for Auto-Recovery ! Maybe :)
+							     (Ciobanu Alexander)
+
+ 12) Added Debug messages to Files and Select_Interpreter Form.
+							     (Ciobanu Alexander)
+
+ 13) Repaired some issues with ActiveControl in MainForm.
+							     (Ciobanu Alexander)
+
+ 14) Added Icons to project to indentify each interpreter !
+							     (Popov John)
+
+ 15) Project now compiles whithout _DEBUG_.
+							     (Ciobanu Alexander)
+
+LOG ------- 30.07.2003
+
+ 1) Ant Trails are finally workable ! Resed Grid behaves normal as it should.
+							     (Popov John)
+
+ 2) Added "Help Topics" form. It should maintain all help subsystem.
+    We won't use native Windows help format.
+							     (Popov John)
+
+ 3) Started writing all Documentation in Romanian.
+							     (Ciobanu Alexander)
+
+ 4) Removed ALL bugs related to Ant (known for now :) ).
+							     (Popov John, Ciobanu Alexander)
+
+LOG ------- 31.07.2003
+ 1) Implemented Help Subsystem. Made help context to appear when help file
+    really exists.
+							     (Ciobanu Alexander)
+
+ 2) Implemented Printing. It still has some issues but IT WORKS !
+							     (Popov John)
+
+ 3) Repaired a bug in movement.pas that caused App not to work under
+    win98.
+							     (Popov John, Ciobanu Alexander)
+
+ 4) Debugging added to MANY functions, Locking support, letters support.
+							     (Ciobanu Alexander)
+
+ 5) DblClicks make their job in mainform.
+							     (Popov John)
+
+ 6) Change_Interpreter Dialog has been changed totally. Moving to the
+    next version now.
+							     (Popov John)
+                                    *** VERSION  0.1.4 ***
+
+ 7) Fixed some issues with appearing of Context_Help outside the screen
+    bounds.
+							     (Ciobanu Alexander)
+
+ 8) Added Context Help to all Forms in project. Moved some internals form
+    MainForm to Context_Form.
+							     (Ciobanu Alexander)
+
+ 9) Added New entries to Language Files, describing new needs to
+    Internationalization process. Translated OK,Cancel, Interpreter's
+    names, Dialogs captions and other stuff.
+							     (Ciobanu Alexander)
+
+10) Made a change in Select_Language dialog to display in ListBox
+    the selected language as active.
+							     (Ciobanu Alexander)
+
+11) Implemented Until Construction , Integrated it into My Syntax.
+    Graphical Changes needed !
+							     (Ciobanu Alexander)
+
+LOG ------- 01.08.2003
+
+ 1) Implemented Styles to help subsystem. Remove #9 from read
+    files, before parsing them.
+							     (Ciobanu Alexander)
+
+ 2) Repaired the bug related to Anormal Positionating of Letters
+    and sometimes their dissapearance.
+							     (Ciobanu Alexander)
+ 3) Removed the debugging bug, causing Main Thread to Die when
+    using the same file descriptor.(Dos based systems are really 
+    Slow to this sort of file handling stuff :( )
+							     (Ciobanu Alexander)
+
+ 4) Implemented "Extend Editor" feature and added translation to Trans_AI_.
+							     (Ciobanu Alexnader)
+
+ 5) Implemented new commandline behaviour to accept files open them.
+ 							     (Ciobanu alexander)
+
+ 6) Updated Install Script to setup registry values to open
+    .ANT and .CNG files automatically !
+							     (Ciobanu Alexander)
+
+ 7) Updated manual.doc to comply to US standars. It now can be used by
+    almost everyone.
+							     (Popov John)
+
+ 8) Multiple Cahnges and remakes ! No way i will comment all !
+							     (Ciobanu Alexnader)
+
+                                    *** VERSION  0.1.5 ***
+
+LOG ------- 02.08.2003
+
+ 9) Implemented recent files. Now you can load your files without searching them.
+							     (Ciobanu Alexander)
+
+ 10) Updated Compile scripts to be able to use different languages
+     for installation. Now we have ProSetup.exe (English)
+     ProInstalare.exe (Romanian) and working on russian one !
+							     (Ciobanu Alexander)
+
+ 11) Updated Russian language to comply to latest Syntax changes.
+							     (Ciobanu Alexander)
+
+ 12) Repaired a bug related To ANSI. All uppercase routines were based
+     on UpperCase that do not support locales so moved all
+     UpperCase to AnsiUpperCase
+							     (Ciobanu Alexander)
+
+ 13) Some minor user improvements like : trackbar position inverted, Check_Save
+     dialog improved for accepting long file names. Grid sizes now are highlited
+     when are active.
+							     (Ciobanu Alexander)
+
+ 14) Made a lot of work creating initialization code for each form.
+    Now , when changing a Constant in DesignInside like FormColor, all
+    forms will change their colors and panel ,,, etc ...
+							     (Ciobanu Alexander)
+
+ 15) Normalized problems with Icons ! Now Eduka+ displays its native
+     icon and has other 2 for Ant/Kangaroo
+							     (Ciobanu Alexander)
+
+LOG ------- 04.08.2003
+  1) Changed Icon styles for a few controls.
+							     (Popov John)
+
+  2) Font Compatibility. If Webdings 3 font is not found, Webdings is
+     used instead. If Tahoma is not found, Arial is used !
+							     (Ciobanu Alexander, Popov John)
+
+  3) Repaired Font compatibility and Charset stuff on Win9x.
+							     (Ciobanu Alexander, Popov John)
+
+  4) A few changes observed when testing on '95 Pentium I box.
+							     (Ciobanu Alexander)
+
+
+  5) Spitted on all Syntax differences and implemented a unique
+     syntax for Ant and for Kangaroo !
+							     (Ciobanu Alexnader, Popov John)
+
+  6) Minor changes in behavior.
+							     (Ciobanu Alexander)
+
+  7) Big changes to interface to look more open for users.
+							     (Popov John)
+
+  8) Icon for Interpreter changes with interpreter itself ! Captions
+     changes too. F**k, man no one will EVER notice
+     that 2 interpreters are in one single application :)
+							    (Ciobanu Alexander)
+
+  9) Changes in the Understanding Is_Line Is_Not_Line Condition. 
+							    (Popov John)
+
+  10) Changes in the ProSyntax Unit On The What Repeat Understanding Condition.
+							    (Popov John)
+
+
+  11) Changed Eduka+'s licence ! No more GPL :).
+							    (Ciobanu Alexander, Popv John)							
+
+LOG ------- 08.08.2003							    
+   1) Made some not significant changes to repaire some minor bugs.
+						            (Ciobanu Alexander)
+
+   2) Added a new entry to language files to make some restrictions on
+      used characters !
+							    (Ciobanu Alexander)
+
+                                     *** VERSION  0.1.7 ***						
+
+   3) Added a routine to find out when an infinite loop with nops are 
+      in progress and shut down the program.
+							    (Ciobanu Alexander)
+
+   4) Made some changes to interface to acheive most flexible
+      look ever !
+							    (Ciobanu Alexander)
+
+   5) Changed Trans_AI_ and language files to comply to the 
+      newest standarts.
+							    (Ciobanu Alexander)
+
+   6) Added Romanian language with diacritics.
+							    (Ciobanu Alexander)
+
+LOG ------- 10.08.2003	
+
+   1) Implemented Pascal-Style Comments. Tested but may be buggy.
+							    (Ciobanu Alexander)
+
+   2) Started writing Eduka+'s Site.
+							    (Popov John)
+
+
+LOG ------- 11.08.2003	
+   1) Repaired some bugs related to newly introduced comment styles !
+							    (Ciobanu Alexander)
+
+   2) Now , indentifiers do not translate.
+							    (Ciobanu Alexander)
+
+   3) --noseldlg does not show options menu !
+							    (Ciobanu Alexander)
+
+                                     *** VERSION  0.1.8 ***		
+LOG ------- 13.08.2003	
+   1) Made a few changes to ProSyntax to comply to latest Syntax definitions:
+       Indentifier is now valid only if it looks like : l_{ln_}
+							    (Ciobanu Alexander)
+
+   2) Written License in Russian. Rewrite for Romanian and english is
+      REQUIRED !
+							    (Popov John)
+
+   3) Added "Create Desktop Shortcuts" capability available ONLY
+      in Personal Mode.
+							    (Ciobanu Alexander)
+
+   4) Changed Language files in order to comply to latest changes
+							    (Ciobanu Alexander)
+
+   5) Made some changes to About dialog to display our site and
+      to display the package type.
+							    (Ciobanu Alexander)
+LOG ------- 15.08.2003
+    BUG REMOVING DAY !
+
+   1) When CurrentInterpreter in Registry is set to an other value,
+      a BUG comes out (no animal image is displayed and other things ) ---> Fixed
+
+   2) a BIG bug with language support when changed from registry !     ---> Fixed
+
+   3) GridPixelSize BUG (registry)                                     ---> Fixed
+
+   4) GridPixelSize BUG (from files)                                   ---> Fixed
+
+                                                            (Ciobanu Alexander)
+
+   5) Changed the way Indentifiers are 	indentified in a file .
+      `id' is now used instead of =id.
+							    (Ciobanu Alexander)
+
+   6) A few changes to make app more comfortable.
+							    (Ciobanu Alexander)
+
+   7) Too many changes to be listed. Passing to next version !
+							    (Ciobanu Alexander)
+
+                                     *** VERSION  0.1.9 ***		
+
+LOG ------- 22.11.2003
+   Restarted working on the projects.
+
+   1) Made first steps to integrate Tux language into Eduka+
+							    (Ciobanu Alexander)
+
+LOG ------- 26.02.2004
+   1) Reworked some parts of code to integrate new TUX language.
+							    (Ciobanu Alexander)
+
+   2) TUX is more complicated pascal-like language so it does not need any
+      panels, etc ... implemented !
+							    (Ciobanu Alexander)
+
+   3) No more Personal/Didactical packages, only standard.
+							    (Ciobanu Alexander)
+
+   4) Added TUX syntax to Trans_AI_. Reworking needed in Language files.
+							    (Ciobanu Alexander)
+
+   5) Tux format saving/reading implemented !
+							    (Ciobanu Alexander)
+
+   6) Drawing Functions are implemented (mostly just Ant's).
+							    (Ciobanu Alexander)
+
+                                     *** VERSION  0.2.0 ***		
+LOG -------- 17.03.2004
+    1) Added interpreter into source code. Way more things to be done,
+       but its a start !!!
+							    (Ciobanu Alexander)
+
+    2) Added TU_VAR token to main token list.
+							    (Ciobanu Alexander)
+
+    3) Modified language files and units to reflect new changes.
+							    (Ciobanu Alexander)
+LOG -------- 02.07.2004
+
+    1) Reversed, modified and improved some of my older changes !
+						            (Ciobanu Alexander)
+
+    2) New Buttons, handlings and Trans_AI_ stuff added to program.
+							    (Ciobanu Alexander)
+
+    3) Changed License to GPL and modified About to reflect new changes.
+       Slightly modified about algorithm ...
+							    (Ciobanu Alexander)
+
+    4) Enabled (AFTER ALL) the syntax highlighting for the Tux, Contidional
+       support, language files updates. More to come ...
+							    (Ciobanu Alexander)
+
+LOG -------- 03.07.2004
+    1) Work Continues !!!! .... Now, changed and improved syntax higlighting
+       for Tux.
+							    (Ciobanu Alexander)
+
+    2) Finished code insight for Tux, Added new Dialog (Memory), changed
+       Trans_AI_ to reflect new changes.
+							    (Ciobanu Alexander)
+
+    3) A lot of work in the direction of making everything work ! 
+       Now, just the support for files translations and Animal
+       Drawing + minor corrections are needed in order to have everything
+       ready for stage 2 (Where we are going to implement new logics).
+
+							    (Ciobanu Alexander)
+
+    4) Some changes to make program more accessible from Keyboard only ! ESC and ENTER
+       usage in many places
+							    (Ciobanu Alexander)
+
+    5) Fixes ! The input and movement controls are now deactivated until a new file
+       is created or other is opened !
+							    (Ciobanu Alexander)
+
+    6) Animal (Tux) is ready to be shown ! It's useful for practical usage.
+       Now, only file saving left ! Going further ....
+							    (Ciobanu Alexander)
+
+    7) File management READY !!!! Fixed a minor typo in files generated by Eduka+
+       Getting ready for Logistcs ...
+							    (Ciobanu Alexander)
+
+
+	                              *** VERSION  0.3.0 ***
+    8) Modified Versioning info ...
+							    (Ciobanu Alexander)
+
+LOG -------- 04.07.2004
+
+    1) Case Fixes. Now ,for ex., Procedure names in Code Insight are the case they are
+       in Code.
+							    (Ciobanu Alexander)
+
+
+    2) Work on integrating new syntax is 90% complete, only the condition support
+       must be expanded.
+							    (Ciobanu Alexander)
+
+
+    3) Finished work on Tux syntax !
+							    (Ciobanu Alexander)
+
+    4) Lots of bugfixes that appeared because of syntax changes.
+       Entering the dark cloud of implementig the run-time for Tux !
+							    (Ciobanu Alexander)
+
+	                              *** VERSION  0.4.0 ***
+
+    5) Reflecting new version Changes.
+							    (Ciobanu Alexander)
+
+    6) Errors are highlighted in red selection color
+							    (Ciobanu Alexander)
+
+    7) Instructions Menu appears only when in extended mode.
+							    (Ciobanu Alexander)
+
+
+    8) Pocket appearance implemented, included in language specifications.
+							    (Ciobanu Alexander)
+
+    9) Some new Visual adjustments for comodity and usability.
+							    (Ciobanu Alexander)
+
+   10) Officially changed the License to MPL 1.1 or GPL 2 (Depending on preferences).
+       A lot of source changes to make this happen, but now, everithing
+       is just perfect, and we are not brakeing anything with our license !
+							    (Ciobanu Alexander)
+
+   11) We have finally changed name Eduka+ to Eduka+. This needs a version
+       change :-) ! Will wait for new icon theme and Splash image from
+       John Popov, plus some code implementation to finish the Tux interpreter.
+							    (Ciobanu Alexander)
+
+	                              *** VERSION  0.5.0 ***
+
+LOG -------- 05.07.2004
+    1) Some work on Memory(Tux) management, the rest is upon John !
+							    (Ciobanu Alexander)
+
+    2) Removed the lock list bug !
+							    (Ciobanu Alexander)
+
+    3) Changed the icon theme form Gnome/Bluecurve/Kristal.
+							    (Popov John)
+
+    4) Repaired the bug with =,>,< identifiers.
+							    (Ciobanu Alexander)
+
+    5) The Tux is up and running :-). Expect more bug reports :-0.
+							    (Ciobanu Alexander)
+
+LOG -------- 06.07.2004
+    1) The highlighting of a portion of code is now done even for
+       runtime errors ! Now it is easier to track down logical errors.
+							    (Ciobanu Alexander)
+
+    2) The "Code Insight Bug" ( hmmm ... not really a bug ) was repaired.
+       Now everything should behave OK. Found another bug related to first one.
+							    (Ciobanu Alexander)
+
+    3) Started the work on Tester Utility. Added Trans_AI_ entries,
+       and will work on new stuff ...
+							    (Ciobanu Alexander)
+
+
+    4) Lots of code is working down here :) You can now create a new 
+       task (problem) for the children with title, language, description ... ETC
+
+    5) Added support for New/Open/Close functionality. No real file management
+       yet !
+							    (Ciobanu Alexander)
+
+    6) Yet, some design modifications. New Tux image added !
+							     (Popov John)
+
+
+LOG -------- 07.07.2004
+    1) Added support for saving Task Files. Lots of Modifications in
+       a lot of code sources to support new Changes !
+							    (Ciobanu Alexander)
+
+
+    2) Support for On-Fly Interpreter Changing when in Task Editor Mode.
+							    (Ciobanu Alexander)
+
+    3) Partial support for loading of Task files. Improvements for loading
+       this format.
+							    (Ciobanu Alexander)
+
+LOG -------- 08.07.2004
+
+    1) Full support for loading of Task files.
+							    (Ciobanu Alexander)
+
+    2) Started the work on Test Support !
+							    (Ciobanu Alexander)
+
+LOG -------- 09.07.2004
+
+    1) Implemented all Menu/ToolBar Gliphs.
+							    (Popov John)
+
+    2) Finish icons for Aplication/Interpretors Shortcuts.
+							    (Popov John)
+
+    3) Completed and Extended Instalation Script.
+							    (Popov John)
+
+LOG -------- 10.07.2004
+
+    1) Extended and Finalize Instalation Script.
+							    (Popov John)
+
+    2) created and implemented icons for documents:
+	 .ant, .cng, .tux
+							    (Popov John)
+
+    3) Now Interpreters run from shortcuts.
+							    (Popov John)
+   
+    4) Add Mutex to prevent the user from installing new 
+	versions of an application while the application 
+	is still running, and to prevent the user from
+	uninstalling a running application.
+       For that I make changes in sources and Instalation Script	
+							    (Popov John)
+
+							    (Popov John)
+LOG -------- 11.07.2004
+
+    1) Reparied Bug. Now All interpretors run from desktop shorcuts 
+	(withhout installing program from setup, 
+				I meen with clear registry).
+							    (Popov John)
+
+    2) Warning!
+	Make Important and Semnificative changes in task/test design
+	- added some objects (panels, groupBox,...)
+	- removed some textLabels 
+							    (Popov John)	
+
+LOG -------- 12.07.2004
+    1) Some more work on Interface Design ...
+							    (Popov John)	
+
+	                              *** VERSION  0.6.0 ***    
+
+    2) Fixed two bugs in the Syntax Analizer and other Depending on
+       AnsiUpperCase <> AnsiLowerCase test.
+							    (Ciobanu Alexander)	
+
+    3) New Feature ! Can copy The Grid after a run test to Task Grids.
+       Needs some adjustments !
+							    (Ciobanu Alexander)	
+
+    4) Adjustments, adjustments .... and, yet, adjustments !!!!!!
+							    (Ciobanu Alexander)	
+
+    5) Modifications in source layout !
+							    (Ciobanu Alexander)	
+
+    6) Added new unit for Print/ Export support ! Hurrray, someone has some
+       work to do :) Johnny :) ... come here my darling :)
+							    (Ciobanu Alexander)	
+
+    7) Repaired a bug that would appear if a .tux or .ant file is
+       empty. Also repaired a bug where a ComboBox is used when it
+       does not have initialized values.
+							    (Ciobanu Alexander)	
+
+
+
+LOG -------- 13.07.2004
+
+    1) Started implementation of Test Editor ! Including files to available
+       list is working now , plus made some adjustments to make
+       further modifications easily integrable. Changed StringGrid with
+       ListBox.
+							    (Ciobanu Alexander)	
+
+
+LOG -------- 15.07.2004
+    1) Test Editor is now fully functional !! Read , write, etc ... works.
+							    (Ciobanu Alexander)	
+
+    2) Special "My Documents" folders are used to store user tests/tasks/sources
+       Installation follows the same model.
+							    (Popov John)
+
+    3) new iSetup install scripts. Multilanguage support !!!! Component support ...
+       Icons and interface design for iSetup !!!! Cool :)
+							    (Popov John)
+
+    4) 3 bug fixes for now.
+							    (Ciobanu Alexander)
+
+    5) Started the work on Runtime Tester facility.
+							    (Ciobanu Alexander)
+
+LOG -------- 16.07.2004
+    1) Runtime tester facility is now 80% in working state. What is left is :
+         - Composing and choosing description.
+							    (Ciobanu Alexander)
+
+
+    2) 5 bug fixes.
+							    (Ciobanu Alexander)
+
+
+    3) **** HTML Task Export Facility is Almost Ready For Use. HURRAY !!!!!!
+							    (Popov John)
+
+    4) Some more work on Exports, in the near future we wil be able to
+       do a lot of stuff :)
+							    (Popov John)
+
+    5) 4 bug fixes.
+							    (Ciobanu Alexander)
+
+    6) Testing facility is almost ready ! Needs a new dialog which
+       will ask some info on the person to be evaluated and the
+       location where to save the report.
+							    (Ciobanu Alexander)
+
+    7) We moved to constant-based image indexing !
+							    (Ciobanu Alexander)
+
+LOG -------- 17.07.2004
+    1) New Select Student Dialog Added. Entriest to Translate added too ...
+							    (Ciobanu Alexander)
+
+    2) Lots of Stuff was implemented, repaired, modified ... The most
+       important new features are : 
+            - Fully functional "Tester facility". Awaiting exporter from John
+ 		to complete it's functionality.
+	    - Context Help is now updated to reflect new changes.
+	    - Constant-based image indexing ... fully functional.
+	    - Reflect Registered User/Org in About Form.
+            - Resizing algorithm for ContextHelp, plus some improvements.
+            - New Translate Items.
+            - Better Error Handling.
+            - Recursive file adding to available file list.
+	    - Fixed the Handling of R1..R4 Menu entries.
+              
+							    (Ciobanu Alexander)
+
+
+    3) Added Debugging points to 
+        - About Form !
+	- Check_Save Form !
+
+    4) 2 bugfixes (Of course copy-paste bugs :( )        
+       
+							    (Ciobanu Alexander)
+
+LOG -------- 19.07.2004
+    1) Source modifications ... lots and lots of modifications.
+       The layout of the source tree has suffered lots of changes !
+       1/2 of all units have been adapted to OSS model, added comments
+       cutting unsed code, debugging improvements .... lots of 
+       changes in all spheres.
+							    (Ciobanu Alexander)
+
+    2) Debug-related compile bugfixes.      
+							    (Ciobanu Alexander)
+
+    3) Printing option is implemented. Some problems persist...
+     
+							    (Popov John)
+
+    4) Partially finished romanian help file. "What is this?" is working.
+     
+							    (Popov John)
+
+	                              *** VERSION  0.7.0 *** 
+LOG -------- 20.07.2004
+    1) Printing support ready.
+							    (Popov John)
+
+    2) Finish interface design, icons.      
+							    (Popov John)
+
+    3) Files Bug repaired (Grid Size). Made some important changes to
+       our source framework ... which , normally introduced a number of 
+       "interesting" :( bugs ... which i will deal this days ...
+     
+							    (Ciobanu Alexander)
+
+	                              *** VERSION  1.0.0 BETA *** 
+LOG -------- 22.07.2004
+    1) We're in the final test sequence ! Many improvements, bugfixes were
+       made theese days. Tux advanced conditions work as expected now.
+       Improvements to file Saving. Romanian Help files almost finished.
+       Good looking Installation Kit. 3 Languages full support in installation.
+       More to go ...
+							    (Ciobanu Alexander, Popov John)
+
+LOG -------- 27.07.2004
+   1) Many bugfixes ... impoved some parts, minimized speed/memory usage, new tokenizer.
+      New ideeas, Step-By-Step Highlighting.
+   							    (Ciobanu Alexander, Popov John)
+
+   2) New bugfixes, some memory usage improvement, tokenizer improvements. Next to
+      come is some node improvements plus some bugfixes related to memory management that
+      are very rare !!!!
+							    (Ciobanu Alexander)		
+
+   3) Modifications to About dialog. Wrote some new things down.
+							    (Ciobanu Alexander)		
+
+LOG -------- 29.07.2004		
+   1) Added new handling for Grids. Saving/Restoring/Clearing.
+   							    (Ciobanu Alexander)
+
+   2) Set new Grid Size will not delete grid contents. Handling of
+      automated grid size disabling. Too much to write down :)
+
+   							    (Ciobanu Alexander)		
+
+   3) Wrote down some sourses for Ant/Kangaroo interpreters
+   							    (Ciobanu Alexander, Popov John)
+
+   3) Added new icons for new functionalities.
+   							    (Popov John)
+		
+LOG -------- 01.02.2005
+   1) Removed/Changed like 500 lines. It's called cleanup :)
+   							    (Ciobanu Alexander)	
+
+   2) Analitics and Visual Design is off the line ... I won't implement
+      those. Lack of time. wanna' finnish what is there now !
+   							    (Ciobanu Alexander)	
+
+   3) Added new dialog for adding packages. It's avery useful thing
+      when you want to share lots of sources/tests/exercises.
+      Will implement functionality later this day
+   							    (Ciobanu Alexander)	
+
+   4) Modified and reworked + added all missing parts to language
+      file. now everything seems ok.
+   							    (Ciobanu Alexander)	
+
+
+   5) Removed an simple copy-paste bug ... hmmm, where did it came from :)
+   							    (Ciobanu Alexander)	
+
+   6) Finished creating sample sources. It's complete now.
+
+   							    (Ciobanu Alexander)	
+
+   6) L.O.L .... another pretty stupid bug :) And another one
+      with deleting the grid when dynamically changing languages.
+
+   							    (Ciobanu Alexander)	
+
+
+LOG -------- 02.02.2005
+   1) Added a CriticalStage variable that will enable a protection of
+      critical file managing.
+   							    (Ciobanu Alexander)	
+
+   2) Package management up and ready ! Awaiting bug fixes.
+   							    (Ciobanu Alexander)	
+
+   2) Updated the installscript to reflect the newest changes !
+      Now all installable packages can be removed using Package Manager.
+   							    (Ciobanu Alexander)	
+
+LOG -------- 04.02.2005
+   1) Administration module up and running ! I'm proud because
+      these new functions are very useful for Schools with naughty
+      Kids ;)
+   							    (Ciobanu Alexander)
+
+   2) Translations + Installations + Bugs ... all fixed. Still
+      there are some bugs ... dunno where they came from but i bet
+      from removing by me a lot of now-deprecated code.
+   							    (Ciobanu Alexander)
+
+   2) Dunno how, but there are lots of bugs related old issues ...
+      i have fixed them a long time ago, but it seems somehow i've managed
+      to mix the new sources with old ones ... odd ... hate old bugs :((
+   							    (Ciobanu Alexander)
+
+
+LOG -------- 05.02.2005
+   1) New Trial/ Register mods added to application.
+   							    (Ciobanu Alexander)
+
+   2) Old ver bugfixes .... :(
+   							    (Ciobanu Alexander)
+
+   3) Repaired the bug with CloseFile ... i was using Close(file)
+      instead of CloseFile(file) ... old style programming :))
+   							    (Ciobanu Alexander)
+
+   4) Repaired some bugs with the we-all-know-how-bad-it-works
+      test running mode :)
+   							    (Ciobanu Alexander)
+
+   5) Switched to Win32 Help system ... now awaiting John to complete
+      help files.
+   							    (Ciobanu Alexander)
+
+
+LOG -------- 16.02.2005
+   1) Added Icons for :
+      - Package Manager
+      - Set Stop Point / stop Poin (two icons)
+      - Begin/End icons in Menu
+      - Sound on / off
+   							    (Popov John)
+   							                                              
+   2) New Splash Design ready and inserted.
+   							    (Popov John)
+   
+   3) Changed some interface options (suggested by john).
+   							    (Popov John)
+
+LOG -------- 18.02.2005
+   1) Repaired some well-known-old bugs (not really bugs ...)
+   							    (Ciobanu Alexander)
+   							    
+   2) Changed some things as suggested by a QA user.
+   							    (Ciobanu Alexander)
+
+LOG -------- 06.08.2005
+   1) Repaired a Logic bug with Else keyword repeated multiple times
+      in a If contruction.
+   							    (Ciobanu Alexander)
+
+   2) Repaired a "inconvinience" when you started the click in editor
+      and finished it on the gutter, thus creating a Click on the gutter
+      that would produce a breakpoint :)
+   							    (Ciobanu Alexander)
+
+   3) Added new security measures to Serial Numbers. Now they store in registry
+      encrypted with Computer HD-ID. Now we can redistribute the software to
+      "good" people withound giving a Serial-Number, but a HD-KEY that would
+      enable only them to use the software.
+   							    (Ciobanu Alexander)
+   4) Using JEDI component pack in our project. It enables us to refine our
+      GUI and repair some unpleasant bugs on XP SP2. Unfortunately 1.31Mb
+      size limit is passed :(
+   							    (Ciobanu Alexander)
+
+   5) Switched to "Key" security type. Also "S/N" security is also needed.
+      this gives more pretty stuff.
+   							    (Ciobanu Alexander)
+
+   6) Repaired a small inconvinience for step-by-step mode.
+   							    (Ciobanu Alexander)
+
+   7) Added Icons for all "What is this" help items on all forms.
+   							    (Ciobanu Alexander)
+
+   8) Repaired a Syntax and a Logic bug. Both were very annoying.
+      Also repaired some internal bugs along with proper package
+      management
+   							    (Ciobanu Alexander)
+
+   9) More GUI Improvements. Bug in the Translation.pas module.
+   							    (Ciobanu Alexander)
+
+   10) Ported ISS to new help/key systems. Added packages for helps
+       and other stuff to make everything work like intended :)
+   							    (Ciobanu Alexander)
+
+LOG -------- 10.08.2005
+	                              *** VERSION  1.6.0 ***
+
+  1) First alpha version of romanian help system. Looks quite OK but needs
+     some more adjustments and colors. 
+   							    (Popov John)
+
+  2) Generic JS/HTML/CSS support for helps.  
+
+   							    (Popov John)
+
+LOG -------- 24.08.2005
+
+   1) All Romanian stuff is handled directly in the installer.
+   							    (Ciobanu Alexander)
+
+   2) Big changes in language code and files too. All tests rewritten.
+   							    (Ciobanu Alexander)
+
+   3) More advanced security algorithm.
+   							    (Ciobanu Alexander)
+
+   4) Expiration based key files. ow working perfectly.
+   							    (Ciobanu Alexander)
+
+   5) Romanian help file finished and ready to be used !
+   							    (Popov John)
+
+   6) Redesigned installer images, icons and some inmages.
+   							    (Popov John)
+
+TODO: 
+Translate:
+ DLG_ENTERQ -->  de gandit normal la asta

@@ -1,0 +1,41 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 1
+[Data]
+1 1 0 1 24
+[Grid]
+0 0
+[Code]
+
+Procedure `Rt_10'
+ Repeat `10' Times
+  Right
+ End Repeat
+End Procedure
+
+Procedure `Lt_10'
+ Repeat `10' Times
+  Left
+ End Repeat
+End Procedure
+
+Procedure `Up_10'
+ Repeat `10' Times
+  Up
+ End Repeat
+End Procedure
+
+Procedure `Dw_10'
+ Repeat `10' Times
+  Down
+ End Repeat
+End Procedure
+
+Begin
+ Call `Rt_10'
+ Call `Dw_10'
+ Call `Lt_10'
+ Call `Up_10'
+End
+
+

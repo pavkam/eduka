@@ -1,0 +1,28 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 36
+[Grid]
+0 0
+[Code]
+
+Begin 
+
+Repeat
+
+ Repeat
+
+  If Not IsBorder Then
+   Step 
+  Else
+   Rotate
+  End If
+
+ Until IsLine
+
+ Rotate 
+
+Until IsLine
+
+End 

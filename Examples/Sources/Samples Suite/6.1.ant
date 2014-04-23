@@ -1,0 +1,131 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 1
+[Data]
+1 1 1 0 20
+[Grid]
+7 4 d
+7 8 h
+7 12 l
+7 16 p
+8 1 a
+8 3 c
+8 5 e
+8 7 g
+8 9 i
+8 11 k
+8 13 m
+8 15 o
+8 17 q
+9 2 b
+9 6 f
+9 10 j
+9 14 n
+9 18 d
+0 0
+[Code]
+Procedure `goright'
+Repeat `9' Times
+Right 
+End Repeat 
+Down
+Repeat `10' Times
+Left 
+End Repeat 
+End Procedure
+
+Procedure `return'
+While Not IsBorder Do
+Left 
+End While 
+End Procedure
+
+Begin 
+
+Repeat `16' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `15' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `14' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `13' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `12' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `11' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `10' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `9' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `8' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `7' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `6' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `5' Times
+Right 
+End Repeat 
+Call `RETURN'
+Down 
+
+Repeat `9' Times
+Right 
+End Repeat 
+Up
+Right Right
+Down
+Repeat `5' Times
+Left 
+End Repeat 
+
+Repeat `5' Times
+Call `GORIGHT'
+End Repeat
+
+End 

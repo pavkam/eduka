@@ -1,0 +1,33 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 1
+[Data]
+5 4 1 0 36
+[Grid] 
+0 0
+[Code]
+
+Procedure `Till_Left'
+ While Not IsBorder Do
+  Left
+ End While
+End Procedure
+
+
+Procedure `Till_Down'
+ While Not IsBorder Do
+  Down
+ End While
+End Procedure
+
+
+Procedure `Corner_LeftDown'
+ Call `Till_Left'  Right
+ Call `Till_Down' Left
+End Procedure
+
+Begin
+
+ Call `Corner_LeftDown'
+
+End

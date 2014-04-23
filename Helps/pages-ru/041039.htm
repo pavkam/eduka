@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Сообщения об ошибках в Eduka+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../css/default.css" rel="stylesheet" type="text/css">
+<SCRIPT language=javascript 
+src="../js/treemenu.js"></SCRIPT>
+<SCRIPT language=javascript 
+src="menuitems.js"></SCRIPT></head>
+
+
+<body  leftmargin="0" topmargin="0">
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="040039.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="044043.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+<table width="100%" height="90%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="2%" nowrap class="leftmenustyle">
+	  <SCRIPT language="" type=text/javascript >createTree(Tree,0,41);</script>
+    </td>
+    <td><p class="text-topictitle">Сообщения об ошибках в Eduka+</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <A NAME="10000"></A><p class="text-subtopic">Ошибка (0x00)</p>
+      <p> Текст алгоритма не содержит синтаксических ошибок. Все что написано 
+        в тексте алгоритме имеет смысл. Но это совсем не указывает на то, что 
+        алгоритм составлен логически правильно.<br>
+        Логические ошибки можно обнаружить только во время исполнения алгоритма, 
+        следя за поведением исполнителя.</p>
+	  <p>&nbsp;</p>	
+	  <A NAME="10010"></A><p class="text-subtopic">Ошибка (0x0A)</p>
+      <p> Ошибка времени выполнения.<br>
+        Движение исполнителя было прервано. Впереди препятствие или край поля.</p>
+      <p>&nbsp;</p>
+	  <A NAME="10013"></A><p class="text-subtopic">Ошибка (0x0D)</p>
+      <p>Исполнение алгоритма вошло в бесконечный цикл. В таких случаях алгоритм 
+        можно остановить, с помощью команды <span class="text-bold">Остановка</span>.</p>
+      <p>&nbsp;</p>
+      <p>Пример алгоритма, который, выполняясь бесконечно, блокируется:<br>
+        <font  face="Courier New"><font color="#000000"><b>&nbsp;Начало</b><br>
+        <b>&nbsp;&nbsp;Повтор</b><br>
+        <b>&nbsp;&nbsp;&nbsp;Пока Не </b><font color="#800000">Край </font><b>Делай</b><br>
+        <font color="#000080">&nbsp;&nbsp;&nbsp;&nbsp;Шаг</font><br>
+        <b>&nbsp;&nbsp;&nbsp;Конец </b></font><font  face="Courier New"><font color="#000000"><b>Пока</b></font></font><font color="#000000"><br>
+        <b>&nbsp;&nbsp;До </b><font color="#800000">Линия</font><br>
+        <b>&nbsp;</b></font></font><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font></p>
+      <p>&nbsp;</p>  
+      <A NAME="10001"></A><p class="text-subtopic">Ошибка (0x01)</p>
+      <p> Текст алгоритма не завершен. Отсутствует одно или более ключевых слов.</p>
+      <p>&nbsp;</p>
+      <p> Следующий пример иллюстрирует происхождение такой ошибки:</p>
+      <p><font  face= "Courier New"><font color="#000000"><b>&nbsp;</b></font><font  face="Courier New"><font color="#000000"><b>Начало</b></font></font><font color="#000000"><br>
+        <b>&nbsp;Если </b><font color="#800000">Линия</font></font></font></p>
+      <p>В этом примере ошибка состоит в отсутствии ключевого слова <span class="text-bold">Если</span> 
+        в тексте алгоритма.</p>
+      <p>&nbsp;</p>
+      <A NAME="10003"></A><p class="text-subtopic">Ошибка (0x03)</p>
+      <p> Идентификатор не представляет правильное условие, определенное синтаксисом 
+        языка.<br>
+        Этим подразумевается неправильная или ошибочная запись условия. В случае 
+        исполнителя Пингвин возможно ошибочная запись условия или не был соблюден 
+        порядок ключевых слов в составе условия.</p>
+      <p>Следующие примеры иллюстрируют возможные сообщения такой ошибки.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Если </b><font color="#800080"><i>Лииния 
+        </i></font><b>Тогда</b></font></font></p>
+      <p>Лишняя буква.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Если Не Тогда</b></font></font></p>
+      <p>Ключевое слово <span class="text-bold">Не</span> в одиночестве не может 
+        составить условие. Оно является лишь отрицанием значения, возвращаемого 
+        при проверке, допустим условия <span class="text-bold">Линия</span>.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Если </b><font color="#800080"><i>Краи 
+        </i></font><b>Тогда</b></font></font> </p>
+      <p>Неправильная запись ключевого слова <span class="text-bold">Край</span>.</p>
+      <p>&nbsp;</p>
+      <p><font  face="Courier New"><font color="#000000"><b>Если </b><font color="#80000">Следовать 
+        Будет Стена </font><b>Тогда</b></font></font> </p>
+      <p>Эта ошибка свойственно исполнителю Пингвин. Условия исполнителя Пингвин 
+        отличны от условий исполнителей Кенгурёнок и Муравей, более того, условия 
+        у исполнителя Пингвин сложнее и составлены из двух или более ключевых 
+        слов, где порядок их записи строго определён. Поэтому Неправильная запись 
+        одного ключевого слова, либо отсутствие одного слова или несоблюдение 
+        порядка записи ключевых слов в выражении условии может способствовать 
+        появлению сообщения такой ошибки</p>
+      <p>&nbsp;</p>
+      <p><A NAME="10005"></A></p>
+      <p class="text-subtopic">Ошибка (0x05)</p>
+      <p> В структуре составных операторов находятся множество ключевых слов. 
+        В зависимости от структуры, ключевые слова могут быть:</p>
+      <p>&nbsp;</p>
+      <p> <span class="text-bold">Повтори</span> и <span class="text-bold">До</span> 
+        для цикла <span class="text-bold">Повтори...До</span>:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Повтори</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;До </b><font color="#800080"><i>&lt;Условие&gt;</i></font></font></font></p>
+      <p>&nbsp;</p>
+      <p> <span class="text-bold">Пока</span>, <span class="text-bold">Делай</span>, 
+        <span class="text-bold">Конец</span> и <span class="text-bold">Пока</span> 
+        для цикла <span class="text-bold">Пока</span>:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Пока</b><font color="#800080"><i> 
+        &lt;</i></font><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Условие</i></font></font></font><font color="#800080"><i>&gt; 
+        </i></font><b>Делай</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Конец </b></font><font  face="Courier New"><font color="#000000"><b>Пока</b><font color="#800080"><i></i></font></font></font></font></p>
+      <p>&nbsp;</p>
+      <p> <span class="text-bold">Если</span>, <span class="text-bold">Тогда</span>, 
+        <span class="text-bold">Иначе</span>, <span class="text-bold">Конец</span> 
+        и <span class="text-bold">Если</span> для оператора ветвления <span class="text-bold">Если</span>:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Если</b><font color="#800080"><i> 
+        &lt;</i></font><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Условие</i></font></font></font><font color="#800080"><i>&gt; 
+        </i></font><b>Тогда</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Иначе</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;</b></font><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font><font color="#000000"><b> 
+        </b></font><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>Если</b><font color="#800080"><i></i></font></font></font></font></font></p>
+      <p>&nbsp;</p>
+      <p>Проверьте присутствие этих ключевых слов и их правописание.</p>
+      <p>&nbsp;</p>
+      <A NAME="10006"></A><p class="text-subtopic">Ошибка (0x06)</p>
+      <p> Неправильное число.<br>
+        Правильным числом считается последовательность, составленная только из 
+        цифр. Значение числа из структуры цикла <span class="text-bold">Повтори 
+        </span>представляет счетчик, который не может быть отрицательным числом.</p>
+      <p>&nbsp;</p>
+      <A NAME="10007"></A> <p class="text-subtopic">Ошибка (0x07)</p>
+      <p> В теле цикла или процедуры является обязательным присутствие минимум 
+        одной команды.</p>
+      <p>&nbsp;</p>
+      <p>Правильный пример:</p>
+      <p><font face="Courier New"><font color="#000000"><b>&nbsp;Повтори</b><br>
+        <font color="#000080">&nbsp;&nbsp;Шаг</font><br>
+        <b>&nbsp;Пока </b><font color="#800000">Край</font></font></font></p>
+      <p>&nbsp;</p>
+      <p> Неправильный пример цикла, в котором нет ни одной команды:</p>
+      <p><font face="Courier New"><font color="#000000"><b>&nbsp;</b></font><font face="Courier New"><font color="#000000"><b>Повтори</b></font></font><font color="#000000"><br>
+        <font color="#000080">&nbsp;&nbsp;</font><br>
+        <b>&nbsp;</b></font><font face="Courier New"><font color="#000000"><b>Пока</b></font></font> 
+        <font face="Courier New"><font color="#000000"><font color="#800000">Край</font></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10011"></A><p class="text-subtopic">Ошибка (0x0B)</p>
+      <p> Выражение &lt;Условие&gt; находится вне структуры составной команды.<br>
+        Эта структура может быть:</p>
+      <p>&nbsp; </p>
+      <p>Цикл <span class="text-bold">Повтори...До</span>:</p>
+      <p><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Повтори</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;До </b><font color="#800080"><i>&lt;Условие&gt;</i></font></font></font><font color="#000000"></font></font></p>
+      <p>&nbsp; </p>
+      <p>Цикл <span class="text-bold">Пока</span>:</p>
+      <p><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Пока</b><font color="#800080"><i> 
+        &lt;</i></font><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Условие</i></font></font></font><font color="#800080"><i>&gt; 
+        </i></font><b>Делай</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Конец </b></font><font  face="Courier New"><font color="#000000"><b>Пока</b><font color="#800080"><i></i></font></font></font></font><font color="#000000"></font></font></p>
+      <p>&nbsp;</p>
+      <p> Оператора ветвления <span class="text-bold">Если</span>:</p>
+      <p><b></b><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Если</b><font color="#800080"><i> 
+        &lt;</i></font><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Условие</i></font></font></font><font color="#800080"><i>&gt; 
+        </i></font><b>Тогда</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Иначе</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;</b></font><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font><font color="#000000"><b> 
+        </b></font><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>Если</b><font color="#800080"><i></i></font></font></font></font></font><font color="#000000"></font></font></p>
+      <p>&nbsp;</p>
+      <p> Проверьте присутствие этих ключевых слов структуре составных операторов 
+        и их правописание.</p>
+      <p>&nbsp;</p>
+      <A NAME="10012"></A><p class="text-subtopic">Ошибка (0x0C)</p>
+      <p> Ключевое слово <span class="text-bold">До</span> принадлежит структуре 
+        цикла в которой не было найдено ключевое слово <span class="text-bold">Повтори</span> 
+        как начало структуры.</p>
+      <p>&nbsp;</p>
+      <p>Правильный пример:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;</b><font  face="Courier New"><font  face="Courier New"><b>Повтори</b></font></font><br>
+        <font color="#000080">&nbsp;&nbsp;Шаг</font><br>
+        <b>&nbsp;</b><font  face="Courier New"><font  face="Courier New"><b>До</b></font></font> 
+        <font color="#800000">Край</font></font></font></p>
+      <p>&nbsp;</p>
+	  <A NAME="10012"></A>
+      <p class="text-subtopic">Ошибка (0x1F)</p>
+      <p> Ключевое слово <span class="text-bold">Повтори</span> принадлежит структуре 
+        цикла в которой не было найдено ключевое слово <span class="text-bold">До</span> 
+        как конец структуры.</p>
+      <p>&nbsp;</p>
+      <p> Правильный пример:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;</b><font  face="Courier New"><font  face="Courier New"><b>Повтори</b></font></font><br>
+        <font color="#000080">&nbsp;&nbsp;Шаг</font><br>
+        <b>&nbsp;</b><font  face="Courier New"><font  face="Courier New"><b>До</b></font></font> 
+        <font color="#800000">Край</font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10014"></A><p class="text-subtopic">Ошибка (0x0E)</p>
+      <p> После ключевого слова отсутствует идентификатор имени процедуры.<br>
+        Определите имя процедуры</p>
+      <p>&nbsp;</p>
+      <p>Правильный пример:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Процедура </b><font color="#800080"><i>Квадрат</i></font><br>
+        <font color="#000080">&nbsp;&nbsp;Шаг Поворот</font><br>
+        <font color="#000080">&nbsp;&nbsp;</font><font  face="Courier New"><font color="#000000"><font color="#000080">Шаг 
+        Поворот</font></font></font><br>
+        <font color="#000080">&nbsp;&nbsp;</font><font  face="Courier New"><font color="#000000"><font color="#000080">Шаг 
+        Поворот</font></font></font><br>
+        <font color="#000080">&nbsp;&nbsp;</font><font  face="Courier New"><font color="#000000"><font color="#000080">Шаг 
+        Поворот</font></font></font><br>
+        <b>&nbsp;Конец </b></font><font  face="Courier New"><font color="#000000"><b>Процедура</b></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10015"></A><p class="text-subtopic">Ошибка (0x0F)</p>
+      <p> Повторный идентификатор.<br>
+        Идентификатор уже представляет имя процедуры.</p>
+      <p>Ниже приведен пример, в котором идентификатор Квадрат ошибочно появляется 
+        повторно для определения имени процедуры.</p>
+      <p><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Процедура 
+        </b><font color="#800080"><i>Квадрат</i></font></font></font><font color="#000000"><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        </font><font  face="Courier New"><font color="#000000"><b>&nbsp;Конец 
+        </b></font><font  face="Courier New"><font color="#000000"><b>Процедура</b></font></font></font><font color="#000000"><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        </font><font  face="Courier New"><font color="#000000"><b>&nbsp;Процедура 
+        </b><font color="#800080"><i>Квадрат</i></font></font></font><font color="#000000"><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        </font><font  face="Courier New"><font color="#000000"><b>&nbsp;Конец 
+        </b></font><font  face="Courier New"><font color="#000000"><b>Процедура</b></font></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10016"></A><p class="text-subtopic">Ошибка (0x10)</p>
+      <p> Оператор вызова процедуры после ключевого слова <span class="text-bold">Вызов</span> 
+        должн содержать идентификатор имени вызываемой процедуры.</p>
+      <p>&nbsp;</p>
+      <p>Правильный пример:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Вызов </b><font  face="Courier New"><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Квадрат</i></font></font></font></font><font color="#800080"></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10017"></A><p class="text-subtopic">Ошибка (0x11)</p>
+      <p> Идентификатор имени процедуры не определен или неправильно написан.</p>
+      <p>&nbsp;</p>
+      <p>Ниже приведен пример, в котором идентификатор <span class="text-bold">Квадра</span> 
+        неправильно написан в команде вызова процедуры.</p>
+      <p><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Процедура 
+        </b><font color="#800080"><i>Квадрат</i></font></font></font><font color="#000000"><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        </font><font  face="Courier New"><font color="#000000"><b>&nbsp;Конец 
+        </b></font><font  face="Courier New"><font color="#000000"><b>Процедура</b></font></font></font></font><font color="#000000"><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Начало</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;&nbsp;</b></font><font  face="Courier New"><font color="#000000"><b>&nbsp;Вызов 
+        </b><font  face="Courier New"><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Квадра</i></font></font></font></font></font></font><font color="#000000"><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;</b></font><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10018"></A><p class="text-subtopic">Ошибка (0x12)</p>
+      <p> Неизвестный идентификатор или ключевое слово.<br>
+        Идентификатор не является ключевым словом, определенным синтаксисом языка.</p>
+      <p>&nbsp;</p>
+      <A NAME="10020"></A><p class="text-subtopic">Ошибка (0x14)</p>
+      <p> Один или более составных операторов не имеют окончания <span class="text-bold">Конец</span>.</p>
+      <p>&nbsp;</p>
+      <A NAME="10021"></A><p class="text-subtopic">Ошибка (0x15)</p>
+      <p> После ключевого слова <span class="text-bold">Конец</span> отсутствует 
+        другое ключевое слово.</p>
+      <p>В зависимости от структуры это может быть:</p>
+      <p>&nbsp;</p>
+      <p>Ключевое слово <span class="text-bold">Повтори</span> для цикла:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;Повтори </b><font color="#800080"><i>&lt;Число&gt; 
+        </i></font><b>Раз</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;</b></font><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font></font></font><font color="#000000"><b> 
+        </b></font><font  face="Courier New"><font color="#000000"><b>Повтори</b></font></font></font></p>
+      <p>&nbsp;</p>
+      <p> Ключевое слово <span class="text-bold">Пока</span> для цикла:</p>
+      <p><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Пока</b><font color="#800080"><i> 
+        &lt;</i></font><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Условие</i></font></font></font><font color="#800080"><i>&gt; 
+        </i></font><b>Делай</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Конец </b></font><font  face="Courier New"><font color="#000000"><b>Пока</b><font color="#800080"><i></i></font></font></font></font><font color="#000000"></font></font><font color="#000000"></font></font></p>
+      <p>&nbsp;</p>
+      <p>Ключевое слово <span class="text-bold">Если</span> для оператора ветвления:</p>
+      <p><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Если</b><font color="#800080"><i> 
+        &lt;</i></font><font  face="Courier New"><font color="#000000"><font color="#800080"><i>Условие</i></font></font></font><font color="#800080"><i>&gt; 
+        </i></font><b>Тогда</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Иначе</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;</b></font><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font><font color="#000000"><b> 
+        </b></font><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>Если</b><font color="#800080"><i></i></font></font></font></font></font><font color="#000000"></font></font><font color="#000000"></font></font></p>
+      <p>&nbsp;</p>
+      <p> Ключевое слово <span class="text-bold">Процедура</span> для описания 
+        структуры оператора процедуры:</p>
+      <p><font  face="Courier New"><font color="#000000"><b>&nbsp;</b><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><b>Процедура</b></font></font></font></font></font> 
+        <font color="#800080"><i>&lt;Nume&gt;</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><b>&nbsp;Конец 
+        </b><font  face="Courier New"><b>Процедура</b></font></font></font></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10022"></A><p class="text-subtopic">Ошибка (0x16)</p>
+      <p> Ключевое слово <span class="text-bold">Начало</span> указывает на начало 
+        выполнения алгоритма, а слово <span class="text-bold">Конец</span> - конец 
+        выполнения алгоритма.</p>
+      <p>Если отсутствует ключевое слово <span class="text-bold">Начало</span>, 
+        тогда алгоритм не выполняется.</p>
+      <p>&nbsp;</p>
+      <p>Правильный пример:</p>
+      <p><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Начало</b><br>
+        </font><font  face="Courier New"><font color="#000000"><font color="#800080"><i>&nbsp;&nbsp;Последовательность 
+        операторов</i></font></font></font><font color="#000000"><br>
+        <b>&nbsp;</b></font><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font></font></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10023"></A><p class="text-subtopic">Ошибка (0x17)</p>
+      <p> Любой идентификатор начинается с буквы или символом подчеркивания ( 
+        _ ), далее следует любая комбинация из букв, символ подчеркивания и цифр.</p>
+      <p>&nbsp;</p>
+      <p>Примеры правильных идентификаторов:</p>
+      <p><font  face="Courier New"><font color="#800080"><i>_Ряд , БольшойКвадрат , _3_квадрата </i></font></font></p>
+      <p>&nbsp; </p>
+      <p>Неправильные идентификаторы:</p>
+      <p><font  face="Courier New"><font color="#800080"><i>3Квадрата , *Квадрат*  
+        </i></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10024"></A><p class="text-subtopic">Ошибка (0x18)</p>
+      <p> Идентификатор имени воспоминания присутствует в операторов:<br>
+        Запомнить &lt;Имя воспоминания&gt; и Забыть &lt;Имя воспоминания&gt;</p>
+      <p>&nbsp;</p>
+      <p>Правильные примеры:</p>
+      <p><font  face="Courier New"><font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>Запомнить</b><font color="#800080"><i>&nbsp;Буквы</i></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>Забыть</b><font color="#800080"><i>&nbsp;</i></font><font  face="Courier New"><font color="#800080"><i>Буквы</i></font></font><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10025"></A><p class="text-subtopic">Ошибка (0x19)</p>
+      <p> Один из операндов условия может быть символом, который представляет 
+        букву в следующих случаях:</p>
+      <p>Ячейка = Буква <br>
+        Ячейка &gt; Буква <br>
+        Ячейка &lt; Буква <br>
+        Карман = Буква <br>
+        Карман &gt; Буква <br>
+        Карман &lt; Буква </p>
+      <p>Где Буква предстывляет символ (букву алфавита).</p>
+      <p>&nbsp;</p>
+      <p> Правильный пример:<font  face="Courier New"><font color="#000000"><br>
+        </font><font  face="Courier New"><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>&nbsp;Если</b><font  face="Courier New"><font color="#000000"><font color="#800000"> 
+        Ячейка</font><font color="#800080"><i> = A</i></font></font></font><font color="#800080"><i> 
+        </i></font><b>Тогда</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;Иначе</b><br>
+        <font color="#800080"><i>&nbsp;&nbsp;...</i></font><br>
+        <b>&nbsp;</b></font><font  face="Courier New"><font color="#000000"><b>Конец</b></font></font><font color="#000000"><b> 
+        </b></font><font  face="Courier New"><font  face="Courier New"><font color="#000000"><b>Если</b><font color="#800080"><i></i></font></font></font></font></font><font color="#000000"></font></font><font color="#000000"></font></font></font></p>
+      <p>&nbsp;</p>
+      <A NAME="10026"></A><p class="text-subtopic">Ошибка (0x1A)</p>
+      <p> Ошибка времени выполнения.<br>
+        Нельзя бросить букву, если карман пустой.</p>
+      <p>&nbsp;</p>
+      <A NAME="10027"></A><p class="text-subtopic">Ошибка (0x1B)</p>
+      <p> Ошибка времени выполнения.<br>
+        Нельзя поднять с ячейки букву, если карман уже содержит букву.</p>
+      <p>&nbsp;</p>
+      <A NAME="10028"></A><p class="text-subtopic">Ошибка (0x1C)</p>
+      <p> Ошибка времени выполнения.<br>
+        Нельзя поднять букву, если ячейка пустая.</p>
+      <p>&nbsp;</p>
+      <A NAME="10029"></A><p class="text-subtopic">Ошибка (0x1D)</p>
+      <p> Ошибка времени выполнения.<br>
+        Нельзя бросить с кармана букву, если ячейка уже содержит букву.</p>
+      <p>&nbsp;</p>
+      <A NAME="10030"></A><p class="text-subtopic">Ошибка (0x1E)</p>
+      <p> Ошибка времени выполнения.<br>
+        Нельзя забыть воспоминание, которое не было запомнено.<br>
+      </p>
+      </td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="040039.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="044043.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+</body>
+</html>

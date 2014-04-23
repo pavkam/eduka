@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Metode de reprezentare a algoritmilor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<link href="../css/default.css" rel="stylesheet" type="text/css">
+<SCRIPT language=javascript 
+src="../js/treemenu.js"></SCRIPT>
+<SCRIPT language=javascript 
+src="menuitems.js"></SCRIPT></head>
+
+
+<body  leftmargin="0" topmargin="0">
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="003002.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="006005.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+<table width="100%" height="90%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="2%" nowrap class="leftmenustyle">
+	  <SCRIPT type=text/javascript >createTree(Tree,0,4);</script>
+    </td>
+    <td><p class="text-topictitle">Metode 
+        de reprezentare a algoritmilor</p>
+      <p>Metodele de rezolvare a problemelor sunt descrise adesea în limbaj matematic. 
+        Deşi riguros, acesta nu este întotdeauna adecvat întrucât nu permite specificarea 
+        unor detalii importante în etapa codificării într-un limbaj de programare. 
+        Pentru descrierea algoritmilor se folosesc diferite metode. Unele din 
+        ele sunt orientate spre a reprezenta algoritmi, ce vor fi executaţi de 
+        om, de calculator şi algoritmi ajutători, folosiţi pentru uşurarea gândirii.<br>
+        Vom ilustra metodele de reprezentare a algoritmilor pe baza unei şi aceiaşi 
+        probleme.</p>
+      <p>De alcătuit algoritmul de găsire a valorii minime dintre două mărimi 
+        a şi b.</p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Metoda verbală</p>
+      <p>Metoda verbală se utilizează la etapa iniţială de studiere a algoritmilor 
+        şi e destinată pentru executarea algoritmilor de către om. Forma de notare 
+        a instrucţiunilor este simplă şi fără restricţii, ca să fie clară şi înţeleasă 
+        de om.</p>
+      <p class="text-fon-sur"> <span class="code">Început<br>
+        Se propun valori numerice pentru mărimile a şi b.<br>
+        Dacă a &lt; b, atunci y va fi egal cu a, altfel y va fi egal cu b.<br>
+        Se înscrie în răspuns valoarea y.<br>
+        Sfârşit.</span></p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Scheme logice</p>
+      <p>Permit descrierea algoritmilor în formă grafică. Fiecărui tip de prelucrare 
+        simplă îi corespunde un simbol grafic iar prelucrările structurate sunt 
+        constituite din mai multe simboluri grafice conectate. Ordinea de efectuare 
+        a prelucrărilor este marcată prin săgeţi.<br>
+        Simbolurile grafice utilizate au forme specifice. Ovalul indică începutul 
+        şi sfârşitul algoritmului. Dreptunghiul se utilizează în cazul instrucţiunilor 
+        simple, de atribuire. Rombul indică prezenţa unei instrucţiuni de control 
+        a condiţiilor. Paralelogramul se utilizează în cazul citirii datelor de 
+        intrare şi afişării rezultatelor.</p>
+      <p align="center"><img src="../images/scheme-alg.gif" width="415" height="399"></p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Limbaj algoritmic</p>
+      <p>Este un limbaj artificial constituit dintr-un vocabular restrâns ce conţine 
+        cuvinte cheie asociate prelucrărilor şi identificator ce permit denumirea 
+        datelor. Ca orice limbaj se bazează pe alfabet, un vocabular şi un set 
+        de reguli de sintaxă. Regulile de sintaxă sunt mai puţin stricte decât 
+        în cazul limbajelor de programare. Sunt acceptate expresii descrise în 
+        manieră matematică.<br>
+        Executantul algoritmilor, înscrişi în limbaj algoritmic, poate să fie 
+        atât omul (în acest caz se admit orice instrucţiuni comode), cât şi calculatorul, 
+        dacă se utilizează un sistem special de instrucţiuni.</p>
+      <p class="text-fon-sur"> <span class="code">Început<br>
+        Citire a<br>
+        Citire b<br>
+        Dacă a&lt;b Atunci<br>
+        y:=a<br>
+        Altfel<br>
+        y:=b<br>
+        Sfârşit Dacă<br>
+        Afişare y<br>
+        Sfârşit</span></p>
+      <p>&nbsp;</p>
+      <p class="text-subtopic">Limbaj de programare</p>
+      <p>Limbaj de programare se utilizează pentru scrierea finală a algoritmului 
+        în modul pe care le poate executa calculatorul.</p>
+      <p class="text-fon-sur"> <span class="code">program GasireaValoriiMinime;<br>
+        var a,b,y : real;<br>
+        begin<br>
+        writeln('Introduceti valori pentru marimile a si b');<br>
+        write('a = ');readln(a);<br>
+        write('b = ');readln(b);<br>
+        if a&lt;=b then y:=a else y:=b;<br>
+        writeln('Valoarea minima este ',y:5:2);<br>
+        readln;<br>
+        end.</span></p>
+      </td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="30%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="20"><a href="index.htm"><img src="../images/browse_home.gif" border="0" ></a></td>
+    <td width="20">&nbsp;</td>
+    <td width="20">&nbsp;</td>
+    <td width="20"><a href="003002.htm"><img src="../images/browse_previous-page.gif" border="0"></a></td>
+    <td width="20"><a href="006005.htm"><img src="../images/browse_next-page.gif" border="0" ></a></td>
+  </tr>
+</table>
+</body>
+</html>

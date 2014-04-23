@@ -1,0 +1,85 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.0.0)
+[File Info]
+2 0
+[Data]
+1 1 1 0 36
+[Grid]
+0 0
+[Code]
+
+Procedure `Coridor'
+Repeat `3' Times
+ While Not IsBorder Do
+   Step
+ End While
+ Rotate
+End Repeat
+Step Step
+Rotate
+ While Not IsLine Do
+   Jump
+ End While
+ Rotate Rotate Jump
+ While Not IsBorder Do
+   Step
+ End While
+ Rotate
+ While Not IsLine Do
+   Jump
+ End While
+ Rotate Rotate
+ Jump
+ Rotate Rotate Rotate
+ While Not IsLine Do
+   Jump
+ End While
+ Rotate Rotate Jump
+ Rotate Rotate Rotate
+ 
+ While Not IsLine Do
+   Step
+ End While
+ Step Rotate
+ 
+ While Not IsBorder Do
+   Jump
+ End While
+ Rotate
+ 
+ While Not IsLine Do
+   Jump
+ End While
+ Step
+ Rotate Rotate
+ Jump Step
+ Rotate Rotate Rotate
+ While Not IsLine Do
+   Step
+ End While
+ Step
+ Rotate Rotate
+ 
+ While Not IsBorder Do
+   Jump
+ End While
+  Rotate
+  Jump
+  Rotate Jump
+End Procedure
+
+
+Begin
+ Call `Coridor'
+While Not IsLine Do
+ While Not IsLine Do
+   Step
+ End While
+ 
+Repeat `4' Times
+  If IsLine Then
+    Rotate
+  End If
+End Repeat
+
+End While
+End

@@ -1,0 +1,34 @@
+Eduka+ File Format (Created by Program: Eduka+ Version: 1.5.2)
+[File Info]
+2 2
+[Data]
+1 1 1 0 36
+[Grid]
+6 1 A
+6 5 B
+0 0
+[Code]
+Begin
+ While Not #2$1 #2$2 #2$3 Do
+   Step
+ End While
+ Pick
+ Rotate
+ While Not #2$1 #2$2 #2$3 Do
+   Step
+ End While
+ Swap
+ Rotate
+ While Not #1$1 #1$2 #1$3 Do
+   Step
+ End While
+ Rotate
+ While Not #1$1 #1$2 #1$3 Do
+   Step
+ End While
+ Rotate
+ Drop
+ While Not #1$1 #1$2 #1$3 Do
+   Step
+ End While
+End
